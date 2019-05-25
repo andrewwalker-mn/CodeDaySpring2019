@@ -17,7 +17,7 @@ def inPiece(piece, coords):
     brx = botright.getX()
     bry = botright.getY()
     return (x > tlx and x < brx and y > tly and y < bry)
-
+#image
 image_name = "umn.gif"
 NUM_COLS = 3
 NUM_ROWS = 25
