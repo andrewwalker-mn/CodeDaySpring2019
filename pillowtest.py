@@ -6,7 +6,7 @@ def crop(coords, start, finish):
     image = Img.open(start)
     cropped = image.crop(coords)
     cropped.save(finish)
-    #comment
+    #comment hello
 
 def inPiece(piece, coords):
     x = coords.getX()
