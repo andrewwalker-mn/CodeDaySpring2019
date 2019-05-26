@@ -99,9 +99,7 @@ for y in range(0, NUM_ROWS):
     xloc = 0
 
 Imglist = [item for item in range(0, NUM_ROWS*NUM_COLS)]
-print(Imglist)
 shuffle(Imglist)
-print(Imglist)
 
 win = GraphWin(image_name+" puzzle", SIZE_X, SIZE_Y)
 
