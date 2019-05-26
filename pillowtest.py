@@ -294,14 +294,6 @@ def main():
             if (inRectangle(button5, selectPuzzle)):
                 start_screen = False
 
-
-        #prompt.draw(startwin)
-
-        #clickprompt = Text(Point(startwin.getWidth()/2, 220), "Click outside a box when done with input.")
-        #clickprompt.draw(startwin)
-
-        #startwin.getMouse()
-        #image_name = promptbox.getText()
         try:
             NUM_COLS = int(colsbox.getText())
         except:
@@ -412,6 +404,6 @@ def main():
         if(inRectangle(closeButton, win.getMouse())):
             break
     win.close()
-    
+
 if __name__ == "__main__":
     main()
