@@ -25,6 +25,8 @@ def solvingStage(piece_list):
             if listInOrder(Imglist):
                 puzzleDone()
             break
+        if (inRectangle(closeButton, coords1)):
+            win.close()
         for piece1 in piece_list:
             if inPiece(piece1, coords1):
                 coords2 = win.getMouse()
@@ -349,6 +351,15 @@ solveButton.draw(win)
 solveButtonText = Text(Point(SIZE_X/2, SIZE_Y + SIZE_Y/4), "SOLVE")
 solveButtonText.setSize(10)
 solveButtonText.draw(win)
+
+closeButton = Rectangle(Point(SIZE_X/2 - 24, SIZE_Y + SIZE_Y/3 - 7),Point(SIZE_X/2 + 24, SIZE_Y + SIZE_Y/3 + 7))
+closeButton.setOutline("black")
+closeButton.setFill("yellow")
+closeButton.draw(win)
+
+closeButtonText = Text(Point(SIZE_X/2, SIZE_Y + SIZE_Y/3), "CLOSE")
+closeButtonText.setSize(10)
+closeButtonText.draw(win)
 
 piece_list = [None]*len(Imglist)
 for i in range(0, len(Imglist)):
