@@ -177,9 +177,16 @@ while (not isinstance(NUM_COLS,int) or not isinstance(NUM_ROWS,int) or not isins
     while True:
         selectPuzzle = startwin.getMouse()
         if(inRectangle(button1, selectPuzzle)):
+<<<<<<< HEAD
             if Img.open("panda.gif").size[0] > 225:
                 basewidth = 225
                 img = Img.open("panda.gif")
+=======
+            image_name = "panda.gif"
+            if Img.open(image_name).size[0] > 225:
+                basewidth = 225
+                img = Img.open(image_name)
+>>>>>>> 646fffc4e05b04909c34200b347016e94c756ce9
                 wpercent = (basewidth / float(img.size[0]))
                 hsize = int((float(img.size[1]) * float(wpercent)))
                 img = img.resize((basewidth, hsize), Img.ANTIALIAS)
@@ -188,9 +195,16 @@ while (not isinstance(NUM_COLS,int) or not isinstance(NUM_ROWS,int) or not isins
             previewImage.draw(startwin)
 
         if(inRectangle(button2, selectPuzzle)):
+<<<<<<< HEAD
             if Img.open("umn.gif").size[0] > 225:
                 basewidth = 225
                 img = Img.open("umn.gif")
+=======
+            image_name = "umn.gif"
+            if Img.open(image_name).size[0] > 225:
+                basewidth = 225
+                img = Img.open(image_name)
+>>>>>>> 646fffc4e05b04909c34200b347016e94c756ce9
                 wpercent = (basewidth / float(img.size[0]))
                 hsize = int((float(img.size[1]) * float(wpercent)))
                 img = img.resize((basewidth, hsize), Img.ANTIALIAS)
@@ -199,9 +213,16 @@ while (not isinstance(NUM_COLS,int) or not isinstance(NUM_ROWS,int) or not isins
             previewImage.draw(startwin)
 
         if(inRectangle(button3, selectPuzzle)):
+<<<<<<< HEAD
             if Img.open("grasshopper.gif").size[0] > 225:
                 basewidth = 225
                 img = Img.open("grasshopper.gif")
+=======
+            image_name = "grasshopper.gif"
+            if Img.open(image_name).size[0] > 225:
+                basewidth = 225
+                img = Img.open(image_name)
+>>>>>>> 646fffc4e05b04909c34200b347016e94c756ce9
                 wpercent = (basewidth / float(img.size[0]))
                 hsize = int((float(img.size[1]) * float(wpercent)))
                 img = img.resize((basewidth, hsize), Img.ANTIALIAS)
