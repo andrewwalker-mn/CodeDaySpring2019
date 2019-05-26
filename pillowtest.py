@@ -189,6 +189,17 @@ while (not isinstance(NUM_COLS,int) or not isinstance(NUM_ROWS,int) or not isins
     rowsbox.draw(startwin)
     colsbox.draw(startwin)
 
+    image_name = "resizelogo.gif"
+    if Img.open(image_name).size[0] > 225:
+        basewidth = 225
+        img = Img.open(image_name)
+        wpercent = (basewidth / float(img.size[0]))
+        hsize = int((float(img.size[1]) * float(wpercent)))
+        img = img.resize((basewidth, hsize), Img.ANTIALIAS)
+        img.save("resize" + image_name)
+    previewImage = Image(Point(400, 200), image_name)
+    previewImage.draw(startwin)
+
     while True:
         selectPuzzle = startwin.getMouse()
         if(inRectangle(button1, selectPuzzle)):
@@ -252,7 +263,6 @@ while (not isinstance(NUM_COLS,int) or not isinstance(NUM_ROWS,int) or not isins
                 while True:
                     if inRectangle(OKbox, customwin.getMouse()):
                         image_name = promptbox.getText()
-                        print(image_name)
                         break
                 try:
                     Img.open(image_name)
