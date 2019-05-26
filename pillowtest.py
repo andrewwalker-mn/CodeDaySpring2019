@@ -214,6 +214,9 @@ while (not isinstance(NUM_COLS,int) or not isinstance(NUM_ROWS,int) or not isins
             previewImage.draw(startwin)
 
         if(inRectangle(button3, selectPuzzle)):
+            if Img.open("grasshopper.gif").size[0] > 300:
+                basewidth = 300
+                img = Img.open("grasshopper.gif")
             image_name = "grasshopper.gif"
             if Img.open(image_name).size[0] > 225:
                 basewidth = 225
@@ -225,7 +228,25 @@ while (not isinstance(NUM_COLS,int) or not isinstance(NUM_ROWS,int) or not isins
             previewImage = Image(Point(400,200),"grasshopper.gif")
             previewImage.draw(startwin)
 
-        #if(inRectangle(button4, selectPuzzle)):
+        if(inRectangle(button4, selectPuzzle)):
+            while not isinstance(image_name, str):
+                customwin = GraphWin("Input image name", 250, 100)
+                prompt = Text(Point(customwin.getWidth()/2, 20), "What is the name of the image\nyou want to puzzle-ify?")
+                prompt.draw(customwin)
+                promptbox = Entry(Point(90,60),18)
+                promptbox.draw(customwin)
+                OKtext = Text(Point(210, 60), "OK")
+                OKtext.setSize(15)
+                OKtext.draw(customwin)
+                OKbox = Rectangle(Point(190, 45), Point(230, 75))
+                OKbox.draw(customwin)
+                while True:
+                    if inRectangle(OKbox, customwin.getMouse()):
+                        image_name = promptbox.getText()
+                        print(" clkc")
+                        break
+                customwin.close()
+
 
 
     #prompt.draw(startwin)
