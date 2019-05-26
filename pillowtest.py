@@ -9,6 +9,10 @@ def crop(coords, start, finish):
     cropped.save(finish)
 
 def solvingStage(piece_list):
+    number_of_swaps = 0
+    number_message = Text(Point(SIZE_X * 0.2, SIZE_Y * 1.2), "Number of Swaps: " + str(number_of_swaps))
+    number_message.setTextColor("black")
+    number_message.draw(win)
     while True:
         coords1 = win.getMouse()
         for piece1 in piece_list:
@@ -19,6 +23,11 @@ def solvingStage(piece_list):
                         swap(piece1, piece2)
                         break
                 break
+        number_of_swaps += 1
+        number_message.undraw()
+        number_message = Text(Point(SIZE_X * 0.2, SIZE_Y * 1.2), "Number of Swaps: " + str(number_of_swaps))
+        number_message.setTextColor("black")
+        number_message.draw(win)
         if listInOrder(Imglist):
             puzzleDone()
 
