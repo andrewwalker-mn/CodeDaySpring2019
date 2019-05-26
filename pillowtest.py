@@ -6,6 +6,7 @@ def crop(coords, start, finish):
     image = Img.open(start)
     cropped = image.crop(coords)
     cropped.save(finish)
+    #push
 
 def solvingStage(piece_list):
     while(1):
