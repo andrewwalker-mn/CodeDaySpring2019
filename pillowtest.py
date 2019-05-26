@@ -42,7 +42,8 @@ def solvingStage(piece_list):
         number_message.setTextColor("black")
         number_message.draw(win)
         if listInOrder(Imglist):
-            puzzleDone()
+            break
+    puzzleDone()
 
 def listInOrder(list):
     i = 0
