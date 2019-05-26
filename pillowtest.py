@@ -1,6 +1,7 @@
 from PIL import Image as Img
 from random import shuffle
 from graphics import *
+import os
 
 def crop(coords, start, finish):
     image = Img.open(start)
@@ -8,16 +9,30 @@ def crop(coords, start, finish):
     cropped.save(finish)
 
 def solvingStage(piece_list):
+    number_of_swaps = 0
+    number_message = Text(Point(SIZE_X * 0.5, SIZE_Y * 1.05), "Number of Swaps: " + str(number_of_swaps))
+    number_message.setTextColor("black")
+    number_message.draw(win)
     while True:
         coords1 = win.getMouse()
+        if(inRectangle(solveButton, coords1)):
+            autoSolve(Imglist)
+            if listInOrder(Imglist):
+                puzzleDone()
+            break
         for piece1 in piece_list:
             if inPiece(piece1, coords1):
                 coords2 = win.getMouse()
                 for piece2 in piece_list:
                     if inPiece(piece2, coords2):
-                        swap(piece1, piece2)
+                        swap(piece1, piece2, 1)
                         break
                 break
+        number_of_swaps += 1
+        number_message.undraw()
+        number_message = Text(Point(SIZE_X * 0.5, SIZE_Y * 1.05), "Number of Swaps: " + str(number_of_swaps))
+        number_message.setTextColor("black")
+        number_message.draw(win)
         if listInOrder(Imglist):
             puzzleDone()
 
@@ -34,16 +49,22 @@ def puzzleDone():
     done_message.setSize(20)
     done_message.setTextColor("white")
     done_message.draw(win)
+    for k in range(0, len(Imglist)):
+        os.remove("crop" + str(k) + ".gif")
 
-def swap(piece1, piece2):
+def swap(piece1, piece2, solve):
     topleft1 = Point(piece1.getAnchor().getX()-piece1.getWidth()//2, piece1.getAnchor().getY()-piece1.getHeight()//2)
     piece1x = topleft1.getX()
     piece1y = topleft1.getY()
     topleft2 = Point(piece2.getAnchor().getX()-piece2.getWidth()//2, piece2.getAnchor().getY()-piece2.getHeight()//2)
     piece2x = topleft2.getX()
     piece2y = topleft2.getY()
-    moveAnimation(piece1, (piece2x - piece1x)/20, (piece2y - piece1y)/20, 20, 0.01)
-    moveAnimation(piece2, (piece1x - piece2x)/20, (piece1y - piece2y)/20, 20, 0.01)
+    if solve == 1:
+        moveAnimation(piece1, (piece2x - piece1x)/20, (piece2y - piece1y)/20, 20, 0.01)
+        moveAnimation(piece2, (piece1x - piece2x)/20, (piece1y - piece2y)/20, 20, 0.01)
+    else:
+        moveAnimation(piece1, (piece2x - piece1x)/5, (piece2y - piece1y)/5, 5, 0.01)
+        moveAnimation(piece2, (piece1x - piece2x)/5, (piece1y - piece2y)/5, 5, 0.01)
     index1 = piece_list.index(piece1)
     index2 = piece_list.index(piece2)
     piece_list[index1] = piece2
@@ -59,6 +80,17 @@ def inPiece(piece, coords):
     tlx = topleft.getX()
     tly = topleft.getY()
     botright = Point(piece.getAnchor().getX()+piece.getWidth()//2, piece.getAnchor().getY()+piece.getHeight()//2)
+    brx = botright.getX()
+    bry = botright.getY()
+    return (x > tlx and x < brx and y > tly and y < bry)
+
+def inRectangle(rect, coords):
+    x = coords.getX()
+    y = coords.getY()
+    topleft = rect.getP1()
+    tlx = topleft.getX()
+    tly = topleft.getY()
+    botright = rect.getP2()
     brx = botright.getX()
     bry = botright.getY()
     return (x > tlx and x < brx and y > tly and y < bry)
@@ -80,7 +112,15 @@ def cropPics():
         yloc = yloc + size_y
         xloc = 0
 
+def autoSolve(Imglist):
+    for i in range(len(Imglist)):
+        indexCorrect = findPiece(Imglist, i)
+        swap(piece_list[i], piece_list[indexCorrect], len(Imglist))
 
+def findPiece(Imglist, i):
+    for index in range(len(Imglist)):
+        if Imglist[index] == i:
+            return index
 
 """while True:
     image_name = input("What is the name of the image you want to puzzle-ify? ")
@@ -139,6 +179,15 @@ Imglist = [item for item in range(0, NUM_ROWS*NUM_COLS)]
 shuffle(Imglist)
 
 win = GraphWin(image_name+" puzzle", SIZE_X, 1.5*SIZE_Y)
+
+solveButton = Rectangle(Point(SIZE_X/2 - 24, SIZE_Y + SIZE_Y/4 - 7),Point(SIZE_X/2 + 24, SIZE_Y + SIZE_Y/4 + 7))
+solveButton.setOutline("black")
+solveButton.setFill("yellow")
+solveButton.draw(win)
+
+solveButtonText = Text(Point(SIZE_X/2, SIZE_Y + SIZE_Y/4), "SOLVE")
+solveButtonText.setSize(10)
+solveButtonText.draw(win)
 
 piece_list = [None]*len(Imglist)
 for i in range(0, len(Imglist)):
