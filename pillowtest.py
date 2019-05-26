@@ -143,16 +143,20 @@ while (not isinstance(NUM_COLS,int) or not isinstance(NUM_ROWS,int) or not isins
     title.draw(startwin)
     #Solve the Jigsaw Puzzle by swapping two pieces at a time(click on one piece then clikc on another piece to swap them)
 
-    texti1 = Text(Point(670,150),"Solve the Jigsaw puzzle")
-    texti2 = Text(Point(670,165),"by swapping two pieces")
-    texti3 = Text(Point(670,180),"at a time (click on one")
-    texti4 = Text(Point(670,195),"piece, then click on")
-    texti5 = Text(Point(670,210),"another to swap them)")
+    texti1 = Text(Point(670, 150), "Solve the Jigsaw puzzle")
+    texti2 = Text(Point(670, 165), "by swapping two pieces")
+    texti3 = Text(Point(670, 180), "at a time (click on one")
+    texti4 = Text(Point(670, 195), "piece, then click on")
+    texti5 = Text(Point(670, 210), "another to swap them)")
+    texti6 = Text(Point(670, 225), "Make sure to type in the")
+    texti7 = Text(Point(670, 240), "number of rows and columns.")
     texti1.draw(startwin)
     texti2.draw(startwin)
     texti3.draw(startwin)
     texti4.draw(startwin)
     texti5.draw(startwin)
+    texti6.draw(startwin)
+    texti7.draw(startwin)
 
     cover = Rectangle(Point(250,68), Point(550,335))
     cover.draw(startwin)
@@ -212,7 +216,8 @@ while (not isinstance(NUM_COLS,int) or not isinstance(NUM_ROWS,int) or not isins
     previewImage = Image(Point(400, 200), image_name)
     previewImage.draw(startwin)
 
-    while True:
+    start_screen = True
+    while start_screen:
         selectPuzzle = startwin.getMouse()
         if(inRectangle(button1, selectPuzzle)):
             cover = Rectangle(Point(250,68), Point(550,335))
@@ -293,13 +298,16 @@ while (not isinstance(NUM_COLS,int) or not isinstance(NUM_ROWS,int) or not isins
             previewImage = Image(Point(400, 200), image_name)
             previewImage.draw(startwin)
 
+        if (inRectangle(button5, selectPuzzle)):
+            start_screen = False
+
 
     #prompt.draw(startwin)
 
-    clickprompt = Text(Point(startwin.getWidth()/2, 220), "Click outside a box when done with input.")
-    clickprompt.draw(startwin)
+    #clickprompt = Text(Point(startwin.getWidth()/2, 220), "Click outside a box when done with input.")
+    #clickprompt.draw(startwin)
 
-    startwin.getMouse()
+    #startwin.getMouse()
     #image_name = promptbox.getText()
     try:
         NUM_COLS = int(colsbox.getText())
