@@ -1,6 +1,7 @@
 from PIL import Image as Img
 from random import shuffle
 from graphics import *
+import os
 
 def crop(coords, start, finish):
     image = Img.open(start)
@@ -34,6 +35,8 @@ def puzzleDone():
     done_message.setSize(20)
     done_message.setTextColor("white")
     done_message.draw(win)
+    for k in range(0, len(Imglist)):
+        os.remove("crop" + str(k) + ".gif")
 
 def swap(piece1, piece2):
     topleft1 = Point(piece1.getAnchor().getX()-piece1.getWidth()//2, piece1.getAnchor().getY()-piece1.getHeight()//2)
