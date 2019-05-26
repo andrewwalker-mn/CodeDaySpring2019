@@ -144,15 +144,19 @@ while (not isinstance(NUM_COLS,int) or not isinstance(NUM_ROWS,int) or not isins
     prompt = Text(Point(startwin.getWidth()/2, 40), "What is the name of the image you want to puzzle-ify?")
     rowsprompt = Text(Point(startwin.getWidth()/2, 100), "How many rows do you want in the puzzle?")
     colsprompt = Text(Point(startwin.getWidth()/2, 160), "How many columns do you want in the puzzle?")
+
     prompt.draw(startwin)
     rowsprompt.draw(startwin)
     colsprompt.draw(startwin)
+
     promptbox = Entry(Point(startwin.getWidth()/2, 65), 10)
     rowsbox = Entry(Point(startwin.getWidth()/2, 125), 10)
     colsbox = Entry(Point(startwin.getWidth()/2, 185), 10)
+
     promptbox.draw(startwin)
     rowsbox.draw(startwin)
     colsbox.draw(startwin)
+
     clickprompt = Text(Point(startwin.getWidth()/2, 220), "Click outside a box when done with input.")
     clickprompt.draw(startwin)
 
