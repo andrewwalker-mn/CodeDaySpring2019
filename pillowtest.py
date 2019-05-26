@@ -406,10 +406,12 @@ def main():
     replayButtonText = Text(Point(3*SIZE_X/4, SIZE_Y + SIZE_Y/4 + 10), "REPLAY")
     replayButtonText.setSize(10)
     replayButtonText.draw(win)
-
-    if(inRectangle(replayButton, win.getMouse())):
-        main()
-
-    win.getMouse()
+    while(True):
+        if(inRectangle(replayButton, win.getMouse())):
+            main()
+        if(inRectangle(closeButton, win.getMouse())):
+            break
+    win.close()
+    
 if __name__ == "__main__":
     main()
