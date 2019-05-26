@@ -2,8 +2,10 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="5a5361bb-7c0f-423a-90f7-097aef883e32" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/pillowtest.py" beforeDir="false" afterPath="$PROJECT_DIR$/pillowtest.py" afterDir="false" />
     </list>
+    <option name="TRACKING_ENABLED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -11,22 +13,24 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file pinned="false" current-in-tab="true">
+      <file leaf-file-name="pillowtest.py" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/pillowtest.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="130">
-              <caret line="191" column="28" selection-start-line="191" selection-start-column="28" selection-end-line="191" selection-end-column="28" />
+            <state relative-caret-position="129">
+              <caret line="269" column="49" selection-start-line="269" selection-start-column="49" selection-end-line="269" selection-end-column="49" />
               <folding>
-                <element signature="e#127#208#0" />
-                <element signature="e#1293#1417#0" />
-                <element signature="e#1441#1683#0" />
-                <element signature="e#1722#2680#0" />
-                <element signature="e#2714#3139#0" />
-                <element signature="e#3176#3429#0" />
-                <element signature="e#3489#3570#0" />
-                <element signature="e#3592#3920#0" />
-                <element signature="e#3950#4092#0" />
-                <element signature="e#4125#4215#0" />
+                <element signature="e#0#28#0" expanded="true" />
+                <element signature="e#239#320#0" />
+                <element signature="e#356#1376#0" />
+                <element signature="e#1405#1529#0" />
+                <element signature="e#1553#1795#0" />
+                <element signature="e#1834#2792#0" />
+                <element signature="e#2826#3251#0" />
+                <element signature="e#3288#3541#0" />
+                <element signature="e#3601#3682#0" />
+                <element signature="e#3704#4032#0" />
+                <element signature="e#4100#4204#0" />
+                <element signature="e#4237#4327#0" />
               </folding>
             </state>
           </provider>
@@ -35,7 +39,7 @@
     </leaf>
   </component>
   <component name="Git.Settings">
-    <option name="UPDATE_TYPE" value="MERGE" />
+    <option name="UPDATE_TYPE" value="REBASE" />
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
   <component name="IdeDocumentHistory">
@@ -51,7 +55,6 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -63,10 +66,123 @@
           <select />
         </subPane>
       </pane>
+      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
     <property name="last_opened_file_path" value="$PROJECT_DIR$/pillowtest.py" />
+  </component>
+  <component name="RestoreUpdateTree" date="Moments ago" ActionInfo="_Update">
+    <UpdatedFiles>
+      <FILE-GROUP>
+        <option name="myUpdateName" value="Updated from server" />
+        <option name="myStatusName" value="Changed on server" />
+        <option name="mySupportsDeletion" value="false" />
+        <option name="myCanBeAbsent" value="false" />
+        <option name="myId" value="CHANGED_ON_SERVER" />
+        <FILE-GROUP>
+          <option name="myUpdateName" value="Updated" />
+          <option name="myStatusName" value="Changed" />
+          <option name="mySupportsDeletion" value="false" />
+          <option name="myCanBeAbsent" value="false" />
+          <option name="myId" value="UPDATED" />
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/.idea/workspace.xml</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/pillowtest.py</PATH>
+        </FILE-GROUP>
+        <FILE-GROUP>
+          <option name="myUpdateName" value="Created" />
+          <option name="myStatusName" value="Created" />
+          <option name="mySupportsDeletion" value="false" />
+          <option name="myCanBeAbsent" value="false" />
+          <option name="myId" value="CREATED" />
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/resizelogo.gif</PATH>
+        </FILE-GROUP>
+        <FILE-GROUP>
+          <option name="myUpdateName" value="Deleted" />
+          <option name="myStatusName" value="Deleted" />
+          <option name="mySupportsDeletion" value="false" />
+          <option name="myCanBeAbsent" value="true" />
+          <option name="myId" value="REMOVED_FROM_REPOSITORY" />
+        </FILE-GROUP>
+        <FILE-GROUP>
+          <option name="myUpdateName" value="Restored" />
+          <option name="myStatusName" value="Will be restored" />
+          <option name="mySupportsDeletion" value="false" />
+          <option name="myCanBeAbsent" value="false" />
+          <option name="myId" value="RESTORED" />
+        </FILE-GROUP>
+      </FILE-GROUP>
+      <FILE-GROUP>
+        <option name="myUpdateName" value="Modified" />
+        <option name="myStatusName" value="Modified" />
+        <option name="mySupportsDeletion" value="false" />
+        <option name="myCanBeAbsent" value="false" />
+        <option name="myId" value="MODIFIED" />
+      </FILE-GROUP>
+      <FILE-GROUP>
+        <option name="myUpdateName" value="Skipped" />
+        <option name="myStatusName" value="Skipped" />
+        <option name="mySupportsDeletion" value="false" />
+        <option name="myCanBeAbsent" value="false" />
+        <option name="myId" value="SKIPPED" />
+      </FILE-GROUP>
+      <FILE-GROUP>
+        <option name="myUpdateName" value="Merged with conflicts" />
+        <option name="myStatusName" value="Will be merged with conflicts" />
+        <option name="mySupportsDeletion" value="false" />
+        <option name="myCanBeAbsent" value="false" />
+        <option name="myId" value="MERGED_WITH_CONFLICTS" />
+      </FILE-GROUP>
+      <FILE-GROUP>
+        <option name="myUpdateName" value="Merged with tree conflicts" />
+        <option name="myStatusName" value="Merged with tree conflicts" />
+        <option name="mySupportsDeletion" value="false" />
+        <option name="myCanBeAbsent" value="false" />
+        <option name="myId" value="MERGED_WITH_TREE_CONFLICT" />
+      </FILE-GROUP>
+      <FILE-GROUP>
+        <option name="myUpdateName" value="Merged with property conflicts" />
+        <option name="myStatusName" value="Will be merged with property conflicts" />
+        <option name="mySupportsDeletion" value="false" />
+        <option name="myCanBeAbsent" value="false" />
+        <option name="myId" value="MERGED_WITH_PROPERTY_CONFLICT" />
+      </FILE-GROUP>
+      <FILE-GROUP>
+        <option name="myUpdateName" value="Merged" />
+        <option name="myStatusName" value="Will be merged" />
+        <option name="mySupportsDeletion" value="false" />
+        <option name="myCanBeAbsent" value="false" />
+        <option name="myId" value="MERGED" />
+      </FILE-GROUP>
+      <FILE-GROUP>
+        <option name="myUpdateName" value="Not in repository" />
+        <option name="myStatusName" value="Not in repository" />
+        <option name="mySupportsDeletion" value="true" />
+        <option name="myCanBeAbsent" value="false" />
+        <option name="myId" value="UNKNOWN" />
+      </FILE-GROUP>
+      <FILE-GROUP>
+        <option name="myUpdateName" value="Locally added" />
+        <option name="myStatusName" value="Locally added" />
+        <option name="mySupportsDeletion" value="false" />
+        <option name="myCanBeAbsent" value="false" />
+        <option name="myId" value="LOCALLY_ADDED" />
+      </FILE-GROUP>
+      <FILE-GROUP>
+        <option name="myUpdateName" value="Locally removed" />
+        <option name="myStatusName" value="Locally removed" />
+        <option name="mySupportsDeletion" value="false" />
+        <option name="myCanBeAbsent" value="false" />
+        <option name="myId" value="LOCALLY_REMOVED" />
+      </FILE-GROUP>
+      <FILE-GROUP>
+        <option name="myUpdateName" value="Switched" />
+        <option name="myStatusName" value="Switched" />
+        <option name="mySupportsDeletion" value="false" />
+        <option name="myCanBeAbsent" value="false" />
+        <option name="myId" value="SWITCHED" />
+      </FILE-GROUP>
+    </UpdatedFiles>
   </component>
   <component name="RunDashboard">
     <option name="ruleStates">
@@ -88,7 +204,7 @@
       <envs>
         <env name="PYTHONUNBUFFERED" value="1" />
       </envs>
-      <option name="SDK_HOME" value="C:\Program Files (x86)\Microsoft Visual Studio\Shared\Python36_64\python.exe" />
+      <option name="SDK_HOME" value="/usr/local/bin/python3.6" />
       <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
       <option name="IS_MODULE_SDK" value="false" />
       <option name="ADD_CONTENT_ROOTS" value="true" />
@@ -98,9 +214,6 @@
       <option name="SHOW_COMMAND_LINE" value="false" />
       <option name="EMULATE_TERMINAL" value="false" />
       <option name="MODULE_MODE" value="false" />
-      <option name="REDIRECT_INPUT" value="false" />
-      <option name="INPUT_FILE" value="" />
-      <method v="2" />
     </configuration>
   </component>
   <component name="SvnConfiguration">
@@ -110,27 +223,38 @@
     <servers />
   </component>
   <component name="ToolWindowManager">
-    <frame x="-8" y="-8" width="1382" height="744" extended-state="6" />
+    <frame x="0" y="23" width="1280" height="709" extended-state="0" />
     <editor active="true" />
     <layout>
+      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.2234375" />
+      <window_info anchor="bottom" id="TODO" order="6" weight="0.3289689" />
+      <window_info anchor="bottom" id="Messages" order="8" />
+      <window_info anchor="bottom" id="Event Log" order="10" sideWeight="0.50078124" side_tool="true" weight="0.32755905" />
+      <window_info anchor="bottom" id="Version Control" order="7" sideWeight="0.49921876" weight="0.32440946" />
+      <window_info anchor="bottom" id="Python Console" order="11" weight="0.32972974" />
+      <window_info active="true" anchor="bottom" id="Run" order="2" visible="true" weight="0.296063" />
+      <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
+      <window_info anchor="bottom" id="Terminal" order="9" />
+      <window_info id="Favorites" order="2" side_tool="true" />
+      <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
+      <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
+      <window_info anchor="bottom" id="Version Control" order="7" sideWeight="0.49921876" weight="0.32405892" />
       <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.22395833" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
-      <window_info id="Favorites" order="2" side_tool="true" />
-      <window_info anchor="bottom" id="Message" order="0" />
-      <window_info anchor="bottom" id="Find" order="1" />
-      <window_info active="true" anchor="bottom" id="Run" order="2" visible="true" weight="0.29623568" />
-      <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
-      <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
-      <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
-      <window_info anchor="bottom" id="TODO" order="6" weight="0.3289689" />
-      <window_info anchor="bottom" id="Version Control" order="7" sideWeight="0.49921876" weight="0.32405892" />
-      <window_info anchor="bottom" id="Messages" order="8" />
-      <window_info anchor="bottom" id="Terminal" order="9" />
-      <window_info anchor="bottom" id="Event Log" order="10" sideWeight="0.50078124" side_tool="true" weight="0.32755905" />
-      <window_info anchor="bottom" id="Python Console" order="11" weight="0.32972974" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
-      <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
+      <window_info anchor="bottom" id="TODO" order="6" weight="0.3289689" />
+      <window_info active="true" anchor="bottom" id="Run" order="2" visible="true" weight="0.29623568" />
+      <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
+      <window_info anchor="bottom" id="Messages" order="8" />
+      <window_info anchor="bottom" id="Message" order="0" />
+      <window_info anchor="bottom" id="Event Log" order="10" sideWeight="0.50078124" side_tool="true" weight="0.32755905" />
+      <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
+      <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
+      <window_info id="Favorites" order="2" side_tool="true" />
+      <window_info anchor="bottom" id="Find" order="1" />
+      <window_info anchor="bottom" id="Terminal" order="9" />
+      <window_info anchor="bottom" id="Python Console" order="11" weight="0.32972974" />
     </layout>
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -150,51 +274,349 @@
         </entry>
       </map>
     </option>
-    <option name="RECENT_FILTERS">
-      <map>
-        <entry key="Branch">
-          <value>
-            <list />
-          </value>
-        </entry>
-        <entry key="User">
-          <value>
-            <list />
-          </value>
-        </entry>
-      </map>
-    </option>
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <option name="time" value="1" />
+    </breakpoint-manager>
   </component>
   <component name="editorHistoryManager">
+    <entry file="file://$PROJECT_DIR$/shuffler.py" />
+    <entry file="file://$PROJECT_DIR$/graphicstest.py" />
+    <entry file="file://$PROJECT_DIR$/crop1.gif" />
+    <entry file="file://$PROJECT_DIR$/pillowtest.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="152">
+          <caret line="69" column="25" lean-forward="true" selection-start-line="69" selection-start-column="25" selection-end-line="69" selection-end-column="25" />
+          <folding>
+            <element signature="e#0#28#0" expanded="true" />
+            <element signature="e#239#320#0" />
+            <element signature="e#356#1376#0" />
+            <element signature="e#1405#1529#0" />
+            <element signature="e#1553#1795#0" />
+            <element signature="e#1834#2792#0" />
+            <element signature="e#2826#3251#0" />
+            <element signature="e#3288#3541#0" />
+            <element signature="e#3601#3682#0" />
+            <element signature="e#3704#4032#0" />
+            <element signature="e#4100#4204#0" />
+            <element signature="e#4237#4327#0" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/shuffler.py" />
+    <entry file="file://$PROJECT_DIR$/graphicstest.py" />
+    <entry file="file://$PROJECT_DIR$/crop1.gif" />
+    <entry file="file://$PROJECT_DIR$/pillowtest.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="204">
+          <caret line="26" column="49" lean-forward="true" selection-start-line="26" selection-start-column="49" selection-end-line="26" selection-end-column="49" />
+          <folding>
+            <element signature="e#0#28#0" expanded="true" />
+            <element signature="e#239#320#0" />
+            <element signature="e#356#1376#0" />
+            <element signature="e#1405#1529#0" />
+            <element signature="e#1553#1795#0" />
+            <element signature="e#1834#2792#0" />
+            <element signature="e#2826#3251#0" />
+            <element signature="e#3288#3541#0" />
+            <element signature="e#3601#3682#0" />
+            <element signature="e#3704#4032#0" />
+            <element signature="e#4100#4204#0" />
+            <element signature="e#4237#4327#0" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/pillowtest.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="90">
+          <caret line="8" column="24" selection-start-line="8" selection-start-column="24" selection-end-line="8" selection-end-column="24" />
+          <folding>
+            <element signature="e#0#28#0" expanded="true" />
+            <element signature="e#239#320#0" />
+            <element signature="e#356#1376#0" />
+            <element signature="e#1405#1529#0" />
+            <element signature="e#1553#1795#0" />
+            <element signature="e#1834#2792#0" />
+            <element signature="e#2826#3251#0" />
+            <element signature="e#3288#3541#0" />
+            <element signature="e#3601#3682#0" />
+            <element signature="e#3704#4032#0" />
+            <element signature="e#4100#4204#0" />
+            <element signature="e#4237#4327#0" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/pillowtest.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="255">
+          <caret line="19" selection-start-line="19" selection-end-line="19" />
+          <folding>
+            <element signature="e#0#28#0" expanded="true" />
+            <element signature="e#239#320#0" />
+            <element signature="e#356#1376#0" />
+            <element signature="e#1405#1529#0" />
+            <element signature="e#1553#1795#0" />
+            <element signature="e#1834#2792#0" />
+            <element signature="e#2826#3251#0" />
+            <element signature="e#3288#3541#0" />
+            <element signature="e#3601#3682#0" />
+            <element signature="e#3704#4032#0" />
+            <element signature="e#4100#4204#0" />
+            <element signature="e#4237#4327#0" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/pillowtest.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="30">
+          <caret line="2" column="22" lean-forward="true" selection-start-line="2" selection-start-column="22" selection-end-line="2" selection-end-column="22" />
+          <folding>
+            <element signature="e#0#28#0" expanded="true" />
+            <element signature="e#239#320#0" />
+            <element signature="e#356#1376#0" />
+            <element signature="e#1405#1529#0" />
+            <element signature="e#1553#1795#0" />
+            <element signature="e#1834#2792#0" />
+            <element signature="e#2826#3251#0" />
+            <element signature="e#3288#3541#0" />
+            <element signature="e#3601#3682#0" />
+            <element signature="e#3704#4032#0" />
+            <element signature="e#4100#4204#0" />
+            <element signature="e#4237#4327#0" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/pillowtest.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="300">
+          <caret line="22" column="13" selection-start-line="22" selection-start-column="13" selection-end-line="22" selection-end-column="13" />
+          <folding>
+            <element signature="e#0#28#0" expanded="true" />
+            <element signature="e#239#320#0" />
+            <element signature="e#356#1376#0" />
+            <element signature="e#1405#1529#0" />
+            <element signature="e#1553#1795#0" />
+            <element signature="e#1834#2792#0" />
+            <element signature="e#2826#3251#0" />
+            <element signature="e#3288#3541#0" />
+            <element signature="e#3601#3682#0" />
+            <element signature="e#3704#4032#0" />
+            <element signature="e#4100#4204#0" />
+            <element signature="e#4237#4327#0" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/shuffler.py" />
+    <entry file="file://$PROJECT_DIR$/graphicstest.py" />
+    <entry file="file://$PROJECT_DIR$/crop1.gif" />
+    <entry file="file://$PROJECT_DIR$/pillowtest.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="300">
+          <caret line="20" column="6" lean-forward="true" selection-start-line="20" selection-start-column="6" selection-end-line="20" selection-end-column="6" />
+          <folding>
+            <element signature="e#0#28#0" expanded="true" />
+            <element signature="e#239#320#0" />
+            <element signature="e#356#1376#0" />
+            <element signature="e#1405#1529#0" />
+            <element signature="e#1553#1795#0" />
+            <element signature="e#1834#2792#0" />
+            <element signature="e#2826#3251#0" />
+            <element signature="e#3288#3541#0" />
+            <element signature="e#3601#3682#0" />
+            <element signature="e#3704#4032#0" />
+            <element signature="e#4100#4204#0" />
+            <element signature="e#4237#4327#0" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/shuffler.py" />
+    <entry file="file://$PROJECT_DIR$/graphicstest.py" />
+    <entry file="file://$PROJECT_DIR$/crop1.gif" />
+    <entry file="file://$PROJECT_DIR$/pillowtest.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="300">
+          <caret line="20" column="6" selection-start-line="20" selection-start-column="6" selection-end-line="20" selection-end-column="6" />
+          <folding>
+            <element signature="e#0#28#0" expanded="true" />
+            <element signature="e#239#320#0" />
+            <element signature="e#356#1376#0" />
+            <element signature="e#1405#1529#0" />
+            <element signature="e#1553#1795#0" />
+            <element signature="e#1834#2792#0" />
+            <element signature="e#2826#3251#0" />
+            <element signature="e#3288#3541#0" />
+            <element signature="e#3601#3682#0" />
+            <element signature="e#3704#4032#0" />
+            <element signature="e#4100#4204#0" />
+            <element signature="e#4237#4327#0" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/shuffler.py" />
+    <entry file="file://$PROJECT_DIR$/graphicstest.py" />
+    <entry file="file://$PROJECT_DIR$/crop1.gif" />
+    <entry file="file://$PROJECT_DIR$/pillowtest.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="91">
+          <caret line="58" column="36" lean-forward="true" selection-start-line="58" selection-start-column="36" selection-end-line="58" selection-end-column="36" />
+          <folding>
+            <element signature="e#0#28#0" expanded="true" />
+            <element signature="e#239#320#0" />
+            <element signature="e#356#1376#0" />
+            <element signature="e#1405#1529#0" />
+            <element signature="e#1553#1795#0" />
+            <element signature="e#1834#2792#0" />
+            <element signature="e#2826#3251#0" />
+            <element signature="e#3288#3541#0" />
+            <element signature="e#3601#3682#0" />
+            <element signature="e#3704#4032#0" />
+            <element signature="e#4100#4204#0" />
+            <element signature="e#4237#4327#0" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/shuffler.py" />
+    <entry file="file://$PROJECT_DIR$/graphicstest.py" />
+    <entry file="file://$PROJECT_DIR$/crop1.gif" />
+    <entry file="file://$PROJECT_DIR$/pillowtest.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="161">
+          <caret line="66" column="38" lean-forward="true" selection-start-line="66" selection-start-column="38" selection-end-line="66" selection-end-column="38" />
+          <folding>
+            <element signature="e#0#28#0" expanded="true" />
+            <element signature="e#239#320#0" />
+            <element signature="e#356#1376#0" />
+            <element signature="e#1405#1529#0" />
+            <element signature="e#1553#1795#0" />
+            <element signature="e#1834#2792#0" />
+            <element signature="e#2826#3251#0" />
+            <element signature="e#3288#3541#0" />
+            <element signature="e#3601#3682#0" />
+            <element signature="e#3704#4032#0" />
+            <element signature="e#4100#4204#0" />
+            <element signature="e#4237#4327#0" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/shuffler.py" />
+    <entry file="file://$PROJECT_DIR$/graphicstest.py" />
+    <entry file="file://$PROJECT_DIR$/crop1.gif" />
+    <entry file="file://$PROJECT_DIR$/pillowtest.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="228">
+          <caret line="69" column="30" selection-start-line="69" selection-start-column="30" selection-end-line="69" selection-end-column="30" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/shuffler.py" />
+    <entry file="file://$PROJECT_DIR$/graphicstest.py" />
+    <entry file="file://$PROJECT_DIR$/crop1.gif" />
+    <entry file="file://$PROJECT_DIR$/pillowtest.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="584">
+          <caret line="101" column="16" selection-start-line="101" selection-start-column="16" selection-end-line="101" selection-end-column="16" />
+          <folding>
+            <element signature="e#0#28#0" expanded="true" />
+            <element signature="e#239#320#0" />
+            <element signature="e#356#1376#0" />
+            <element signature="e#1405#1529#0" />
+            <element signature="e#1553#1795#0" />
+            <element signature="e#1834#2792#0" />
+            <element signature="e#2826#3251#0" />
+            <element signature="e#3288#3541#0" />
+            <element signature="e#3601#3682#0" />
+            <element signature="e#3704#4032#0" />
+            <element signature="e#4100#4204#0" />
+            <element signature="e#4237#4327#0" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/shuffler.py" />
+    <entry file="file://$PROJECT_DIR$/graphicstest.py" />
+    <entry file="file://$PROJECT_DIR$/crop1.gif" />
+    <entry file="file://$PROJECT_DIR$/pillowtest.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="286">
+          <caret line="173" column="24" lean-forward="true" selection-start-line="173" selection-start-column="24" selection-end-line="173" selection-end-column="24" />
+          <folding>
+            <element signature="e#0#28#0" expanded="true" />
+            <element signature="e#239#320#0" />
+            <element signature="e#356#1376#0" />
+            <element signature="e#1405#1529#0" />
+            <element signature="e#1553#1795#0" />
+            <element signature="e#1834#2792#0" />
+            <element signature="e#2826#3251#0" />
+            <element signature="e#3288#3541#0" />
+            <element signature="e#3601#3682#0" />
+            <element signature="e#3704#4032#0" />
+            <element signature="e#4100#4204#0" />
+            <element signature="e#4237#4327#0" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/shuffler.py" />
     <entry file="file://$PROJECT_DIR$/graphicstest.py" />
     <entry file="file://$PROJECT_DIR$/crop1.gif" />
     <entry file="file://$PROJECT_DIR$/grasshopper.gif.jpg" />
     <entry file="file://$PROJECT_DIR$/pillowtest.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="130">
-          <caret line="191" column="28" selection-start-line="191" selection-start-column="28" selection-end-line="191" selection-end-column="28" />
+        <state relative-caret-position="2243">
+          <caret line="235" column="58" selection-start-line="235" selection-start-column="58" selection-end-line="235" selection-end-column="58" />
           <folding>
-            <element signature="e#127#208#0" />
-            <element signature="e#1293#1417#0" />
-            <element signature="e#1441#1683#0" />
-            <element signature="e#1722#2680#0" />
-            <element signature="e#2714#3139#0" />
-            <element signature="e#3176#3429#0" />
-            <element signature="e#3489#3570#0" />
-            <element signature="e#3592#3920#0" />
-            <element signature="e#3950#4092#0" />
-            <element signature="e#4125#4215#0" />
+            <element signature="e#0#28#0" expanded="true" />
+            <element signature="e#239#320#0" />
+            <element signature="e#356#1376#0" />
+            <element signature="e#1405#1529#0" />
+            <element signature="e#1553#1795#0" />
+            <element signature="e#1834#2792#0" />
+            <element signature="e#2826#3251#0" />
+            <element signature="e#3288#3541#0" />
+            <element signature="e#3601#3682#0" />
+            <element signature="e#3704#4032#0" />
+            <element signature="e#4100#4204#0" />
+            <element signature="e#4237#4327#0" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$USER_HOME$/OneDrive/Documents/Python/clikdrag.py">
+    <entry file="file://$PROJECT_DIR$/shuffler.py" />
+    <entry file="file://$PROJECT_DIR$/graphicstest.py" />
+    <entry file="file://$PROJECT_DIR$/crop1.gif" />
+    <entry file="file://$PROJECT_DIR$/grasshopper.gif.jpg" />
+    <entry file="file://$PROJECT_DIR$/pillowtest.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-51">
-          <caret line="4" column="40" selection-start-line="4" selection-start-column="40" selection-end-line="4" selection-end-column="40" />
+        <state relative-caret-position="129">
+          <caret line="269" column="49" selection-start-line="269" selection-start-column="49" selection-end-line="269" selection-end-column="49" />
+          <folding>
+            <element signature="e#0#28#0" expanded="true" />
+            <element signature="e#239#320#0" />
+            <element signature="e#356#1376#0" />
+            <element signature="e#1405#1529#0" />
+            <element signature="e#1553#1795#0" />
+            <element signature="e#1834#2792#0" />
+            <element signature="e#2826#3251#0" />
+            <element signature="e#3288#3541#0" />
+            <element signature="e#3601#3682#0" />
+            <element signature="e#3704#4032#0" />
+            <element signature="e#4100#4204#0" />
+            <element signature="e#4237#4327#0" />
+          </folding>
         </state>
       </provider>
     </entry>
+    <entry file="file://$USER_HOME$/OneDrive/Documents/Python/clikdrag.py" />
   </component>
 </project>

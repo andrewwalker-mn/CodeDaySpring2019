@@ -267,7 +267,7 @@ while (not isinstance(NUM_COLS,int) or not isinstance(NUM_ROWS,int) or not isins
                 try:
                     Img.open(image_name)
                 except:
-                    image_name = 12345
+                    image_name = "resizelogo.gif"
                 customwin.close()
 
                 cover = Rectangle(Point(250, 68), Point(550, 335))
