@@ -134,37 +134,49 @@ image_name = 12345
 
 while (not isinstance(NUM_COLS,int) or not isinstance(NUM_ROWS,int) or not isinstance(image_name,str)):
     startwin = GraphWin("Startup screen", 800, 400)
-    #prompt = Text(Point(startwin.getWidth()/2, 40), "What is the name of the image you want to puzzle-ify?")
-    rowsprompt = Text(Point(startwin.getWidth()/2-100, 375), "Rows:")
-    colsprompt = Text(Point(startwin.getWidth()/2+55, 375), "Cols:")
-    text1 = Text(Point(100, 150), "Panda")
-    text2 = Text(Point(100, 200), "UMN")
-    text3 = Text(Point(100, 250), "Grasshopper")
-    text4 = Text(Point(100, 300), "Custom")
-    title = Text(Point(400, 50), "Jigsaw Generator")
-    text5 = Text(Point(700, 300), "Start")
+    title = Text(Point(400, 45), "Jigsaw Generator")
     title.setSize(30)
     title.setFace("helvetica")
     title.setStyle("italic")
-    text5.setSize(20)
-    text1.draw(startwin)
-    text2.draw(startwin)
-    text3.draw(startwin)
-    text4.draw(startwin)
+    title.setTextColor("purple")
     title.draw(startwin)
-    text5.draw(startwin)
+
 
     button1 = Rectangle(Point(40, 140), Point(160, 160))
     button2 = Rectangle(Point(40, 190), Point(160, 210))
     button3 = Rectangle(Point(40, 240), Point(160, 260))
     button4 = Rectangle(Point(40, 290), Point(160, 310))
     button5 = Rectangle(Point(660, 275), Point(740, 325))
+    button1.setOutline("black")
+    button1.setFill("yellow")
+    button2.setOutline("black")
+    button2.setFill("yellow")
+    button3.setOutline("black")
+    button3.setFill("yellow")
+    button4.setOutline("black")
+    button4.setFill("yellow")
+    button5.setOutline("black")
+    button5.setFill("green")
     button1.draw(startwin)
     button2.draw(startwin)
     button3.draw(startwin)
     button4.draw(startwin)
     button5.draw(startwin)
 
+    text1 = Text(Point(100, 150), "Panda")
+    text2 = Text(Point(100, 200), "UMN")
+    text3 = Text(Point(100, 250), "Grasshopper")
+    text4 = Text(Point(100, 300), "Custom")
+    text5 = Text(Point(700, 300), "Start")
+    text5.setSize(20)
+    text1.draw(startwin)
+    text2.draw(startwin)
+    text3.draw(startwin)
+    text4.draw(startwin)
+    text5.draw(startwin)
+
+    rowsprompt = Text(Point(startwin.getWidth()/2-100, 375), "Rows:")
+    colsprompt = Text(Point(startwin.getWidth()/2+55, 375), "Cols:")
     rowsprompt.draw(startwin)
     colsprompt.draw(startwin)
 
@@ -177,6 +189,7 @@ while (not isinstance(NUM_COLS,int) or not isinstance(NUM_ROWS,int) or not isins
     while True:
         selectPuzzle = startwin.getMouse()
         if(inRectangle(button1, selectPuzzle)):
+
             image_name = "panda.gif"
             if Img.open(image_name).size[0] > 225:
                 basewidth = 225
