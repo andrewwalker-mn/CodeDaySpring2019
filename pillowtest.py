@@ -217,6 +217,7 @@ while (not isinstance(NUM_COLS,int) or not isinstance(NUM_ROWS,int) or not isins
             if Img.open("grasshopper.gif").size[0] > 300:
                 basewidth = 300
                 img = Img.open("grasshopper.gif")
+
             image_name = "grasshopper.gif"
             if Img.open(image_name).size[0] > 225:
                 basewidth = 225
