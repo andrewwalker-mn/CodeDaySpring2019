@@ -11,6 +11,8 @@ def crop(coords, start, finish):
 def solvingStage(piece_list):
     while True:
         coords1 = win.getMouse()
+        if(inRectangle(solveButton, coords1)):
+            autoSolve(Imglist)
         for piece1 in piece_list:
             if inPiece(piece1, coords1):
                 coords2 = win.getMouse()
@@ -21,6 +23,9 @@ def solvingStage(piece_list):
                 break
         if listInOrder(Imglist):
             puzzleDone()
+        #coordSolve = win.getMouse()
+        #if(inRectangle(solveButton, coordSolve)):
+        #    autoSolve(Imglist)
 
 def listInOrder(list):
     i = 0
@@ -66,6 +71,17 @@ def inPiece(piece, coords):
     bry = botright.getY()
     return (x > tlx and x < brx and y > tly and y < bry)
 
+def inRectangle(rect, coords):
+    x = coords.getX()
+    y = coords.getY()
+    topleft = rect.getP1()
+    tlx = topleft.getX()
+    tly = topleft.getY()
+    botright = rect.getP2()
+    brx = botright.getX()
+    bry = botright.getY()
+    return (x > tlx and x < brx and y > tly and y < bry)
+
 def moveAnimation(piece, dx, dy, repetitions, delay):
     for i in range(repetitions):
         piece.move(dx, dy)
@@ -83,6 +99,17 @@ def cropPics():
         yloc = yloc + size_y
         xloc = 0
 
+def autoSolve(Imglist):
+    for i in range(len(Imglist)):
+        indexCorrect = findPiece(Imglist, i)
+        swap(piece_list[i], piece_list[indexCorrect])
+        if listInOrder(Imglist):
+            puzzleDone()
+
+def findPiece(Imglist, i):
+    for index in range(len(Imglist)):
+        if Imglist[index] == i:
+            return index
 
 
 while True:
@@ -108,6 +135,15 @@ Imglist = [item for item in range(0, NUM_ROWS*NUM_COLS)]
 shuffle(Imglist)
 
 win = GraphWin(image_name+" puzzle", SIZE_X, 1.5*SIZE_Y)
+
+solveButton = Rectangle(Point(SIZE_X/2 - 24, SIZE_Y + SIZE_Y/4 - 7),Point(SIZE_X/2 + 24, SIZE_Y + SIZE_Y/4 + 7))
+solveButton.setOutline("black")
+solveButton.setFill("yellow")
+solveButton.draw(win)
+
+solveButtonText = Text(Point(SIZE_X/2, SIZE_Y + SIZE_Y/4), "SOLVE")
+solveButtonText.setSize(10)
+solveButtonText.draw(win)
 
 piece_list = [None]*len(Imglist)
 for i in range(0, len(Imglist)):
