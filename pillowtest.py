@@ -177,36 +177,57 @@ while (not isinstance(NUM_COLS,int) or not isinstance(NUM_ROWS,int) or not isins
     while True:
         selectPuzzle = startwin.getMouse()
         if(inRectangle(button1, selectPuzzle)):
+<<<<<<< HEAD
             if Img.open("panda.gif").size[0] > 225:
                 basewidth = 225
                 img = Img.open("panda.gif")
+=======
+            image_name = "panda.gif"
+            if Img.open(image_name).size[0] > 300:
+                basewidth = 300
+                img = Img.open(image_name)
+>>>>>>> b93b72245467ece9bddb55cc55481c5b286b8ddc
                 wpercent = (basewidth / float(img.size[0]))
                 hsize = int((float(img.size[1]) * float(wpercent)))
                 img = img.resize((basewidth, hsize), Img.ANTIALIAS)
-                img.save("panda.gif")
-            previewImage = Image(Point(400,200),"panda.gif")
+                img.save(image_name)
+            previewImage = Image(Point(400,200),image_name)
             previewImage.draw(startwin)
 
         if(inRectangle(button2, selectPuzzle)):
+<<<<<<< HEAD
             if Img.open("umn.gif").size[0] > 225:
                 basewidth = 225
                 img = Img.open("umn.gif")
+=======
+            image_name = "umn.gif"
+            if Img.open(image_name).size[0] > 300:
+                basewidth = 300
+                img = Img.open(image_name)
+>>>>>>> b93b72245467ece9bddb55cc55481c5b286b8ddc
                 wpercent = (basewidth / float(img.size[0]))
                 hsize = int((float(img.size[1]) * float(wpercent)))
                 img = img.resize((basewidth, hsize), Img.ANTIALIAS)
-                img.save("umn.gif")
-            previewImage = Image(Point(400,200),"umn.gif")
+                img.save(image_name)
+            previewImage = Image(Point(400,200),image_name)
             previewImage.draw(startwin)
 
         if(inRectangle(button3, selectPuzzle)):
+<<<<<<< HEAD
             if Img.open("grasshopper.gif").size[0] > 225:
                 basewidth = 225
                 img = Img.open("grasshopper.gif")
+=======
+            image_name = "grasshopper.gif"
+            if Img.open(image_name).size[0] > 300:
+                basewidth = 300
+                img = Img.open(image_name)
+>>>>>>> b93b72245467ece9bddb55cc55481c5b286b8ddc
                 wpercent = (basewidth / float(img.size[0]))
                 hsize = int((float(img.size[1]) * float(wpercent)))
                 img = img.resize((basewidth, hsize), Img.ANTIALIAS)
-                img.save("grasshopper.gif")
-            previewImage = Image(Point(400,200),"grasshopper.gif")
+                img.save(image_name)
+            previewImage = Image(Point(400,200),image_name)
             previewImage.draw(startwin)
 
         #if(inRectangle(button4, selectPuzzle)):
@@ -218,7 +239,7 @@ while (not isinstance(NUM_COLS,int) or not isinstance(NUM_ROWS,int) or not isins
     clickprompt.draw(startwin)
 
     startwin.getMouse()
-    image_name = promptbox.getText()
+    #image_name = promptbox.getText()
     try:
         NUM_COLS = int(colsbox.getText())
     except:
