@@ -134,7 +134,6 @@ image_name = 12345
 
 while (not isinstance(NUM_COLS,int) or not isinstance(NUM_ROWS,int) or not isinstance(image_name,str)):
     startwin = GraphWin("Startup screen", 800, 400)
-    #prompt = Text(Point(startwin.getWidth()/2, 40), "What is the name of the image you want to puzzle-ify?")
     rowsprompt = Text(Point(startwin.getWidth()/2-100, 100), "Rows:")
     colsprompt = Text(Point(startwin.getWidth()/2+55, 100), "Cols:")
     text1 = Text(Point(100, 150), "Panda")
@@ -200,10 +199,27 @@ while (not isinstance(NUM_COLS,int) or not isinstance(NUM_ROWS,int) or not isins
             pandaImage = Image(Point(400,200),"grasshopper.gif")
             pandaImage.draw(startwin)
 
-        #if(inRectangle(button4, selectPuzzle)):
+        if(inRectangle(button4, selectPuzzle)):
+            while not isinstance(image_name, str):
+                customwin = GraphWin("Input image name", 250, 100)
+                prompt = Text(Point(customwin.getWidth()/2, 20), "What is the name of the image\nyou want to puzzle-ify?")
+                prompt.draw(customwin)
+                promptbox = Entry(Point(90,60),18)
+                promptbox.draw(customwin)
+                OKtext = Text(Point(210, 60), "OK")
+                OKtext.setSize(15)
+                OKtext.draw(customwin)
+                OKbox = Rectangle(Point(190, 45), Point(230, 75))
+                OKbox.draw(customwin)
+                while True:
+                    if inRectangle(OKbox, customwin.getMouse()):
+                        image_name = promptbox.getText()
+                        print(" clkc")
+                        break
+                customwin.close()
 
 
-    #prompt.draw(startwin)
+
     rowsprompt.draw(startwin)
     colsprompt.draw(startwin)
 
