@@ -27,6 +27,7 @@ def solvingStage(piece_list):
             break
         if (inRectangle(closeButton, coords1)):
             win.close()
+            break
         for piece1 in piece_list:
             if inPiece(piece1, coords1):
                 coords2 = win.getMouse()
@@ -207,7 +208,7 @@ while (not isinstance(NUM_COLS,int) or not isinstance(NUM_ROWS,int) or not isins
     rowsbox.draw(startwin)
     colsbox.draw(startwin)
 
-    image_name = "resizelogo.gif" 
+    image_name = "resizelogo.gif"
     if Img.open(image_name).size[0] > 225:
         basewidth = 225
         img = Img.open(image_name)
@@ -352,12 +353,12 @@ solveButtonText = Text(Point(SIZE_X/2, SIZE_Y + SIZE_Y/4), "SOLVE")
 solveButtonText.setSize(10)
 solveButtonText.draw(win)
 
-closeButton = Rectangle(Point(SIZE_X/2 - 24, SIZE_Y + SIZE_Y/3 - 7),Point(SIZE_X/2 + 24, SIZE_Y + SIZE_Y/3 + 7))
+closeButton = Rectangle(Point(SIZE_X/2 - 24, SIZE_Y + SIZE_Y/4 + 20 - 7),Point(SIZE_X/2 + 24, SIZE_Y + SIZE_Y/4 + 20 + 7))
 closeButton.setOutline("black")
 closeButton.setFill("yellow")
 closeButton.draw(win)
 
-closeButtonText = Text(Point(SIZE_X/2, SIZE_Y + SIZE_Y/3), "CLOSE")
+closeButtonText = Text(Point(SIZE_X/2, SIZE_Y + SIZE_Y/4 + 20), "CLOSE")
 closeButtonText.setSize(10)
 closeButtonText.draw(win)
 
