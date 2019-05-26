@@ -2,6 +2,11 @@ from PIL import Image as Img
 from random import shuffle
 from graphics import *
 import os
+from pygame import mixer
+
+mixer.init()
+mixer.music.load("TD13.Crows_Playing_with_Water.mp3")
+mixer.music.play()
 
 def crop(coords, start, finish):
     image = Img.open(start)
