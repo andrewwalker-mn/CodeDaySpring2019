@@ -27,14 +27,11 @@ def solvingStage(piece_list):
                 break
         number_of_swaps += 1
         number_message.undraw()
-        number_message = Text(Point(SIZE_X * 0.2, SIZE_Y * 1.2), "Number of Swaps: " + str(number_of_swaps))
+        number_message = Text(Point(SIZE_X * 0.2, SIZE_Y * 1.05), "Number of Swaps: " + str(number_of_swaps))
         number_message.setTextColor("black")
         number_message.draw(win)
         if listInOrder(Imglist):
             puzzleDone()
-        #coordSolve = win.getMouse()
-        #if(inRectangle(solveButton, coordSolve)):
-        #    autoSolve(Imglist)
 
 def listInOrder(list):
     i = 0

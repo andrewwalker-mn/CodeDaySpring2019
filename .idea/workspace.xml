@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="15352ac2-7c66-4de0-8464-e2dec3bf55ec" name="Default Changelist" comment="cleanup">
+    <list default="true" id="15352ac2-7c66-4de0-8464-e2dec3bf55ec" name="Default Changelist" comment="count swap">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/pillowtest.py" beforeDir="false" afterPath="$PROJECT_DIR$/pillowtest.py" afterDir="false" />
     </list>
@@ -17,8 +17,8 @@
       <file leaf-file-name="pillowtest.py" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/pillowtest.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="291">
-              <caret line="37" column="36" selection-start-line="37" selection-start-column="36" selection-end-line="37" selection-end-column="36" />
+            <state relative-caret-position="217">
+              <caret line="31" column="32" lean-forward="true" selection-start-line="31" selection-start-column="32" selection-end-line="31" selection-end-column="32" />
               <folding>
                 <element signature="e#0#28#0" expanded="true" />
               </folding>
@@ -174,7 +174,21 @@
       <option name="project" value="LOCAL" />
       <updated>1558840962409</updated>
     </task>
-    <option name="localTasksCounter" value="4" />
+    <task id="LOCAL-00004" summary="delet dis image">
+      <created>1558842026386</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1558842026386</updated>
+    </task>
+    <task id="LOCAL-00005" summary="count swap">
+      <created>1558849002331</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1558849002331</updated>
+    </task>
+    <option name="localTasksCounter" value="6" />
     <servers />
   </component>
   <component name="ToolWindowManager">
@@ -244,7 +258,9 @@
   <component name="VcsManagerConfiguration">
     <MESSAGE value="merge" />
     <MESSAGE value="cleanup" />
-    <option name="LAST_COMMIT_MESSAGE" value="cleanup" />
+    <MESSAGE value="delet dis image" />
+    <MESSAGE value="count swap" />
+    <option name="LAST_COMMIT_MESSAGE" value="count swap" />
   </component>
   <component name="editorHistoryManager">
     <entry file="file://$PROJECT_DIR$/graphicstest.py" />
@@ -450,8 +466,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/pillowtest.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="291">
-          <caret line="37" column="36" selection-start-line="37" selection-start-column="36" selection-end-line="37" selection-end-column="36" />
+        <state relative-caret-position="217">
+          <caret line="31" column="32" lean-forward="true" selection-start-line="31" selection-start-column="32" selection-end-line="31" selection-end-column="32" />
           <folding>
             <element signature="e#0#28#0" expanded="true" />
           </folding>
