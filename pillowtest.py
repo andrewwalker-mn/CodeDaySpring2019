@@ -10,7 +10,7 @@ def crop(coords, start, finish):
 
 def solvingStage(piece_list):
     number_of_swaps = 0
-    number_message = Text(Point(SIZE_X * 0.2, SIZE_Y * 1.2), "Number of Swaps: " + str(number_of_swaps))
+    number_message = Text(Point(SIZE_X * 0.2, SIZE_Y * 1.05), "Number of Swaps: " + str(number_of_swaps))
     number_message.setTextColor("black")
     number_message.draw(win)
     while True:
