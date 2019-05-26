@@ -1,7 +1,29 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="15352ac2-7c66-4de0-8464-e2dec3bf55ec" name="Default Changelist" comment="" />
+    <list default="true" id="15352ac2-7c66-4de0-8464-e2dec3bf55ec" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/crop0.gif" beforeDir="false" afterPath="$PROJECT_DIR$/crop0.gif" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/crop1.gif" beforeDir="false" afterPath="$PROJECT_DIR$/crop1.gif" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/crop10.gif" beforeDir="false" afterPath="$PROJECT_DIR$/crop10.gif" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/crop11.gif" beforeDir="false" afterPath="$PROJECT_DIR$/crop11.gif" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/crop12.gif" beforeDir="false" afterPath="$PROJECT_DIR$/crop12.gif" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/crop13.gif" beforeDir="false" afterPath="$PROJECT_DIR$/crop13.gif" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/crop14.gif" beforeDir="false" afterPath="$PROJECT_DIR$/crop14.gif" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/crop15.gif" beforeDir="false" afterPath="$PROJECT_DIR$/crop15.gif" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/crop16.gif" beforeDir="false" afterPath="$PROJECT_DIR$/crop16.gif" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/crop17.gif" beforeDir="false" afterPath="$PROJECT_DIR$/crop17.gif" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/crop2.gif" beforeDir="false" afterPath="$PROJECT_DIR$/crop2.gif" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/crop3.gif" beforeDir="false" afterPath="$PROJECT_DIR$/crop3.gif" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/crop4.gif" beforeDir="false" afterPath="$PROJECT_DIR$/crop4.gif" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/crop5.gif" beforeDir="false" afterPath="$PROJECT_DIR$/crop5.gif" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/crop6.gif" beforeDir="false" afterPath="$PROJECT_DIR$/crop6.gif" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/crop7.gif" beforeDir="false" afterPath="$PROJECT_DIR$/crop7.gif" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/crop8.gif" beforeDir="false" afterPath="$PROJECT_DIR$/crop8.gif" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/crop9.gif" beforeDir="false" afterPath="$PROJECT_DIR$/crop9.gif" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pillowtest.py" beforeDir="false" afterPath="$PROJECT_DIR$/pillowtest.py" afterDir="false" />
+    </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -13,11 +35,8 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/pillowtest.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="346">
-              <caret line="22" column="13" selection-start-line="22" selection-start-column="13" selection-end-line="22" selection-end-column="13" />
-              <folding>
-                <element signature="e#0#4#0" expanded="true" />
-              </folding>
+            <state relative-caret-position="228">
+              <caret line="69" column="30" selection-start-line="69" selection-start-column="30" selection-end-line="69" selection-end-column="30" />
             </state>
           </provider>
         </entry>
@@ -30,6 +49,9 @@
         <option value="Python Script" />
       </list>
     </option>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
@@ -51,21 +73,12 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
+      <pane id="ProjectPane" />
       <pane id="Scope" />
-      <pane id="ProjectPane">
-        <subPane>
-          <expand>
-            <path>
-              <item name="untitled" type="b2602c69:ProjectViewProjectNode" />
-              <item name="untitled" type="462c0819:PsiDirectoryNode" />
-            </path>
-          </expand>
-          <select />
-        </subPane>
-      </pane>
     </panes>
   </component>
   <component name="PropertiesComponent">
+    <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="settings.editor.selected.configurable" value="com.jetbrains.python.configuration.PyActiveSdkModuleConfigurable" />
   </component>
   <component name="RunDashboard">
@@ -156,12 +169,12 @@
       <window_info id="Favorites" order="2" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" />
-      <window_info active="true" anchor="bottom" id="Run" order="2" visible="true" weight="0.299509" />
+      <window_info active="true" anchor="bottom" id="Run" order="2" visible="true" weight="0.29787233" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
       <window_info anchor="bottom" id="TODO" order="6" />
-      <window_info anchor="bottom" id="Version Control" order="7" />
+      <window_info anchor="bottom" id="Version Control" order="7" weight="0.3289689" />
       <window_info anchor="bottom" id="Terminal" order="8" />
       <window_info anchor="bottom" id="Event Log" order="9" side_tool="true" />
       <window_info anchor="bottom" id="Python Console" order="10" weight="0.32972974" />
@@ -169,6 +182,32 @@
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
     </layout>
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State>
+              <option name="RECENTLY_FILTERED_USER_GROUPS">
+                <collection />
+              </option>
+              <option name="RECENTLY_FILTERED_BRANCH_GROUPS">
+                <collection />
+              </option>
+              <option name="COLUMN_ORDER">
+                <list>
+                  <option value="0" />
+                  <option value="1" />
+                  <option value="2" />
+                  <option value="3" />
+                </list>
+              </option>
+            </State>
+          </value>
+        </entry>
+      </map>
+    </option>
   </component>
   <component name="editorHistoryManager">
     <entry file="file://$PROJECT_DIR$/shuffler.py">
@@ -186,11 +225,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/pillowtest.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="346">
-          <caret line="22" column="13" selection-start-line="22" selection-start-column="13" selection-end-line="22" selection-end-column="13" />
-          <folding>
-            <element signature="e#0#4#0" expanded="true" />
-          </folding>
+        <state relative-caret-position="228">
+          <caret line="69" column="30" selection-start-line="69" selection-start-column="30" selection-end-line="69" selection-end-column="30" />
         </state>
       </provider>
     </entry>

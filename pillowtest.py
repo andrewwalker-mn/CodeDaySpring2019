@@ -6,7 +6,6 @@ def crop(coords, start, finish):
     image = Img.open(start)
     cropped = image.crop(coords)
     cropped.save(finish)
-    #comment hello
 
 def inPiece(piece, coords):
     x = coords.getX()
@@ -18,10 +17,10 @@ def inPiece(piece, coords):
     brx = botright.getX()
     bry = botright.getY()
     return (x > tlx and x < brx and y > tly and y < bry)
-#image
+
 image_name = "umn.gif"
 NUM_COLS = 3
-NUM_ROWS = 25
+NUM_ROWS = 3
 SIZE_X = Img.open(image_name).size[0]-Img.open(image_name).size[0]%NUM_COLS
 SIZE_Y = Img.open(image_name).size[1]-Img.open(image_name).size[1]%NUM_ROWS
 size_x = SIZE_X/NUM_COLS
@@ -48,8 +47,8 @@ win = GraphWin(image_name+" puzzle", SIZE_X, SIZE_Y)
 
 piece_list = [None]*len(Imglist)
 for i in range(0, len(Imglist)):
-    x = i % NUM_ROWS
-    y = i // NUM_ROWS
+    x = i % NUM_COLS
+    y = i // NUM_COLS
     pt = Point(x*size_x+size_x//2, y*size_y+size_y//2)
     piece_list[i] = Image(pt, "crop"+str(Imglist[i])+".gif")
     piece_list[i].draw(win)
