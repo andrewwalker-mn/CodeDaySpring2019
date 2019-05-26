@@ -398,7 +398,18 @@ def main():
             break
     puzzleDone(SIZE_X, SIZE_Y, win, Imglist)
 
-    win.getMouse()
+    replayButton = Rectangle(Point(3*SIZE_X/4 - 28, SIZE_Y + SIZE_Y/4 + 10 - 7),Point(3*SIZE_X/4 + 28, SIZE_Y + SIZE_Y/4 + 10 + 7))
+    replayButton.setOutline("black")
+    replayButton.setFill("yellow")
+    replayButton.draw(win)
 
+    replayButtonText = Text(Point(3*SIZE_X/4, SIZE_Y + SIZE_Y/4 + 10), "REPLAY")
+    replayButtonText.setSize(10)
+    replayButtonText.draw(win)
+
+    if(inRectangle(replayButton, win.getMouse())):
+        main()
+
+    win.getMouse()
 if __name__ == "__main__":
     main()
