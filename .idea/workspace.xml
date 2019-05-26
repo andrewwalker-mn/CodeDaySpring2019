@@ -1,7 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="15352ac2-7c66-4de0-8464-e2dec3bf55ec" name="Default Changelist" comment="Default Changelist" />
+    <list default="true" id="15352ac2-7c66-4de0-8464-e2dec3bf55ec" name="Default Changelist" comment="commit 4">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pillowtest.py" beforeDir="false" afterPath="$PROJECT_DIR$/pillowtest.py" afterDir="false" />
+    </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -14,8 +17,8 @@
       <file leaf-file-name="pillowtest.py" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/pillowtest.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-747">
-              <caret line="189" column="19" selection-start-line="189" selection-start-column="19" selection-end-line="189" selection-end-column="19" />
+            <state relative-caret-position="237">
+              <caret line="198" column="27" selection-start-line="198" selection-start-column="27" selection-end-line="198" selection-end-column="27" />
               <folding>
                 <element signature="e#0#28#0" expanded="true" />
               </folding>
@@ -228,7 +231,28 @@
       <option name="project" value="LOCAL" />
       <updated>1558858022603</updated>
     </task>
-    <option name="localTasksCounter" value="12" />
+    <task id="LOCAL-00012" summary="commit 2">
+      <created>1558858218813</created>
+      <option name="number" value="00012" />
+      <option name="presentableId" value="LOCAL-00012" />
+      <option name="project" value="LOCAL" />
+      <updated>1558858218813</updated>
+    </task>
+    <task id="LOCAL-00013" summary="commit 3">
+      <created>1558858289668</created>
+      <option name="number" value="00013" />
+      <option name="presentableId" value="LOCAL-00013" />
+      <option name="project" value="LOCAL" />
+      <updated>1558858289668</updated>
+    </task>
+    <task id="LOCAL-00014" summary="commit 4">
+      <created>1558858352688</created>
+      <option name="number" value="00014" />
+      <option name="presentableId" value="LOCAL-00014" />
+      <option name="project" value="LOCAL" />
+      <updated>1558858352688</updated>
+    </task>
+    <option name="localTasksCounter" value="15" />
     <servers />
   </component>
   <component name="TodoView">
@@ -242,13 +266,14 @@
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="23" width="1280" height="709" extended-state="0" />
+    <editor active="true" />
     <layout>
       <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.2234375" />
       <window_info anchor="bottom" id="TODO" order="6" weight="0.3289689" />
       <window_info anchor="bottom" id="Event Log" order="10" sideWeight="0.50078124" side_tool="true" weight="0.32755905" />
       <window_info anchor="bottom" id="Version Control" order="7" sideWeight="0.49921876" weight="0.32569557" />
       <window_info anchor="bottom" id="Python Console" order="11" weight="0.32972974" />
-      <window_info anchor="bottom" id="Run" order="2" weight="0.296063" />
+      <window_info active="true" anchor="bottom" id="Run" order="2" visible="true" weight="0.296063" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info anchor="bottom" id="Terminal" order="9" />
       <window_info id="Favorites" order="2" side_tool="true" />
@@ -304,7 +329,10 @@
     <MESSAGE value="minor fix 5" />
     <MESSAGE value="minor fix 6" />
     <MESSAGE value="Default Changelist" />
-    <option name="LAST_COMMIT_MESSAGE" value="Default Changelist" />
+    <MESSAGE value="commit 2" />
+    <MESSAGE value="commit 3" />
+    <MESSAGE value="commit 4" />
+    <option name="LAST_COMMIT_MESSAGE" value="commit 4" />
   </component>
   <component name="editorHistoryManager">
     <entry file="file://$PROJECT_DIR$/crop1.gif" />
@@ -490,8 +518,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/pillowtest.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-747">
-          <caret line="189" column="19" selection-start-line="189" selection-start-column="19" selection-end-line="189" selection-end-column="19" />
+        <state relative-caret-position="237">
+          <caret line="198" column="27" selection-start-line="198" selection-start-column="27" selection-end-line="198" selection-end-column="27" />
           <folding>
             <element signature="e#0#28#0" expanded="true" />
           </folding>
