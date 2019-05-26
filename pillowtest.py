@@ -189,7 +189,7 @@ while (not isinstance(NUM_COLS,int) or not isinstance(NUM_ROWS,int) or not isins
     rowsbox.draw(startwin)
     colsbox.draw(startwin)
 
-    image_name = "resizelogo.gif"
+    image_name = "resizelogo.gif" 
     if Img.open(image_name).size[0] > 225:
         basewidth = 225
         img = Img.open(image_name)
