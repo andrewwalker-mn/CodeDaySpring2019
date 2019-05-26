@@ -104,7 +104,7 @@ cropPics()
 Imglist = [item for item in range(0, NUM_ROWS*NUM_COLS)]
 shuffle(Imglist)
 
-win = GraphWin(image_name+" puzzle", SIZE_X, SIZE_Y)
+win = GraphWin(image_name+" puzzle", SIZE_X, 1.5*SIZE_Y)
 
 piece_list = [None]*len(Imglist)
 for i in range(0, len(Imglist)):
