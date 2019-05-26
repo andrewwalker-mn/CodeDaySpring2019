@@ -6,10 +6,9 @@ def crop(coords, start, finish):
     image = Img.open(start)
     cropped = image.crop(coords)
     cropped.save(finish)
-    #push
 
 def solvingStage(piece_list):
-    while(1):
+    while True:
         coords1 = win.getMouse()
         for piece1 in piece_list:
             if inPiece(piece1, coords1):
@@ -69,6 +68,20 @@ def moveAnimation(piece, dx, dy, repetitions, delay):
         piece.move(dx, dy)
         time.sleep(delay)
 
+def cropPics():
+    xloc = 0
+    yloc = 0
+    piece_count = 0
+    for y in range(0, NUM_ROWS):
+        for x in range(0, NUM_COLS):
+            crop((xloc, yloc, xloc + size_x, yloc + size_y), image_name, "crop" + str(piece_count) + ".gif")
+            xloc = xloc + size_x
+            piece_count += 1
+        yloc = yloc + size_y
+        xloc = 0
+
+
+
 while True:
     image_name = input("What is the name of the image you want to puzzle-ify? ")
     try:
@@ -86,17 +99,7 @@ size_x = SIZE_X/NUM_COLS
 size_y = SIZE_Y/NUM_ROWS
 crop((0, 0, SIZE_X, SIZE_Y), image_name, "crop.gif")
 
-
-xloc = 0
-yloc = 0
-piece_count = 0
-for y in range(0, NUM_ROWS):
-    for x in range(0, NUM_COLS):
-        crop((xloc, yloc, xloc + size_x, yloc + size_y), image_name, "crop" + str(piece_count) + ".gif")
-        xloc = xloc + size_x
-        piece_count += 1
-    yloc = yloc + size_y
-    xloc = 0
+cropPics()
 
 Imglist = [item for item in range(0, NUM_ROWS*NUM_COLS)]
 shuffle(Imglist)
