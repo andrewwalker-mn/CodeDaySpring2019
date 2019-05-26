@@ -288,7 +288,9 @@ def main():
                     hsize = int((float(img.size[1]) * float(wpercent)))
                     img = img.resize((basewidth, hsize), Img.ANTIALIAS)
                     img.save("resize" + image_name)
-                previewImage = Image(Point(400, 200), "resize" + image_name)
+                    previewImage = Image(Point(400, 200), "resize" + image_name)
+                else:
+                    previewImage = Image(Point(400, 200), image_name)
                 previewImage.draw(startwin)
 
             if (inRectangle(button5, selectPuzzle)):
