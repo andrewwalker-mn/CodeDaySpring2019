@@ -377,8 +377,7 @@ def main():
         if(inRectangle(solveButton, coords1)):
             autoSolve(Imglist,piece_list)
             if listInOrder(Imglist):
-                puzzleDone(SIZE_X, SIZE_Y, win, Imglist)
-            break
+                break
         if (inRectangle(closeButton, coords1)):
             win.close()
             break
@@ -396,7 +395,8 @@ def main():
         number_message.setTextColor("black")
         number_message.draw(win)
         if listInOrder(Imglist):
-            puzzleDone(SIZE_X, SIZE_Y, win, Imglist)
+            break
+    puzzleDone(SIZE_X, SIZE_Y, win, Imglist)
 
     win.getMouse()
 
