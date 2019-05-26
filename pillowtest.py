@@ -229,6 +229,7 @@ while (not isinstance(NUM_COLS,int) or not isinstance(NUM_ROWS,int) or not isins
             previewImage.draw(startwin)
 
         if(inRectangle(button4, selectPuzzle)):
+            image_name = 12345
             while not isinstance(image_name, str):
                 customwin = GraphWin("Input image name", 250, 100)
                 prompt = Text(Point(customwin.getWidth()/2, 20), "What is the name of the image\nyou want to puzzle-ify?")
@@ -243,8 +244,12 @@ while (not isinstance(NUM_COLS,int) or not isinstance(NUM_ROWS,int) or not isins
                 while True:
                     if inRectangle(OKbox, customwin.getMouse()):
                         image_name = promptbox.getText()
-                        print(" clkc")
+                        print(image_name)
                         break
+                try:
+                    Img.open(image_name)
+                except:
+                    image_name = 12345
                 customwin.close()
 
 
