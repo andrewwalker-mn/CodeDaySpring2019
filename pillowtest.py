@@ -127,18 +127,6 @@ def findPiece(Imglist, i):
         if Imglist[index] == i:
             return index
 
-"""while True:
-    image_name = input("What is the name of the image you want to puzzle-ify? ")
-    try:
-        Img.open(image_name)
-        break
-    except:
-        print("Error opening file " + image_name)
-NUM_COLS = int(input("How many columns do you want in your puzzle? "))
-NUM_ROWS = int(input("How many rows do you want in your puzzle? "))
-if input("You will have a " + str(NUM_COLS*NUM_ROWS) + " piece puzzle. Continue? (\"yes\") ") != "yes":
-    exit("by user")"""
-
 
 NUM_COLS = "not an int"
 NUM_ROWS = "not an int"
@@ -176,6 +164,15 @@ while (not isinstance(NUM_COLS,int) or not isinstance(NUM_ROWS,int) or not isins
     except:
         NUM_ROWS = NUM_ROWS
     startwin.close()
+
+if Img.open(image_name).size[0] > 500:
+    basewidth = 500
+    img = Img.open(image_name)
+    wpercent = (basewidth / float(img.size[0]))
+    hsize = int((float(img.size[1]) * float(wpercent)))
+    img = img.resize((basewidth, hsize), Img.ANTIALIAS)
+    img.save(image_name)
+
 SIZE_X = Img.open(image_name).size[0]-Img.open(image_name).size[0]%NUM_COLS
 SIZE_Y = Img.open(image_name).size[1]-Img.open(image_name).size[1]%NUM_ROWS
 size_x = SIZE_X/NUM_COLS
