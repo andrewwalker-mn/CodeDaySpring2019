@@ -198,3 +198,4 @@ for i in range(0, len(Imglist)):
     piece_list[i].draw(win)
 
 solvingStage(piece_list)
+win.getMouse()
