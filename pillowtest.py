@@ -116,14 +116,11 @@ def autoSolve(Imglist):
     for i in range(len(Imglist)):
         indexCorrect = findPiece(Imglist, i)
         swap(piece_list[i], piece_list[indexCorrect], len(Imglist))
-        #if listInOrder(Imglist):
-        #    puzzleDone()
 
 def findPiece(Imglist, i):
     for index in range(len(Imglist)):
         if Imglist[index] == i:
             return index
-
 
 while True:
     image_name = input("What is the name of the image you want to puzzle-ify? ")
