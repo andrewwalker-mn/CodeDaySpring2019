@@ -22,7 +22,7 @@ def solvingStage(piece_list):
                 coords2 = win.getMouse()
                 for piece2 in piece_list:
                     if inPiece(piece2, coords2):
-                        swap(piece1, piece2)
+                        swap(piece1, piece2, 1)
                         break
                 break
         number_of_swaps += 1
@@ -49,15 +49,19 @@ def puzzleDone():
     for k in range(0, len(Imglist)):
         os.remove("crop" + str(k) + ".gif")
 
-def swap(piece1, piece2):
+def swap(piece1, piece2, solve):
     topleft1 = Point(piece1.getAnchor().getX()-piece1.getWidth()//2, piece1.getAnchor().getY()-piece1.getHeight()//2)
     piece1x = topleft1.getX()
     piece1y = topleft1.getY()
     topleft2 = Point(piece2.getAnchor().getX()-piece2.getWidth()//2, piece2.getAnchor().getY()-piece2.getHeight()//2)
     piece2x = topleft2.getX()
     piece2y = topleft2.getY()
-    moveAnimation(piece1, (piece2x - piece1x)/20, (piece2y - piece1y)/20, 20, 0.01)
-    moveAnimation(piece2, (piece1x - piece2x)/20, (piece1y - piece2y)/20, 20, 0.01)
+    if solve == 1:
+        moveAnimation(piece1, (piece2x - piece1x)/20, (piece2y - piece1y)/20, 20, 0.01)
+        moveAnimation(piece2, (piece1x - piece2x)/20, (piece1y - piece2y)/20, 20, 0.01)
+    else:
+        moveAnimation(piece1, (piece2x - piece1x)/5, (piece2y - piece1y)/5, 5, 0.01)
+        moveAnimation(piece2, (piece1x - piece2x)/5, (piece1y - piece2y)/5, 5, 0.01)
     index1 = piece_list.index(piece1)
     index2 = piece_list.index(piece2)
     piece_list[index1] = piece2
@@ -108,9 +112,9 @@ def cropPics():
 def autoSolve(Imglist):
     for i in range(len(Imglist)):
         indexCorrect = findPiece(Imglist, i)
-        swap(piece_list[i], piece_list[indexCorrect])
-        if listInOrder(Imglist):
-            puzzleDone()
+        swap(piece_list[i], piece_list[indexCorrect], len(Imglist))
+        #if listInOrder(Imglist):
+        #    puzzleDone()
 
 def findPiece(Imglist, i):
     for index in range(len(Imglist)):
