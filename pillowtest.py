@@ -202,8 +202,8 @@ while (not isinstance(NUM_COLS,int) or not isinstance(NUM_ROWS,int) or not isins
                 wpercent = (basewidth / float(img.size[0]))
                 hsize = int((float(img.size[1]) * float(wpercent)))
                 img = img.resize((basewidth, hsize), Img.ANTIALIAS)
-                img.save("panda.gif")
-            previewImage = Image(Point(400,200),"panda.gif")
+                img.save("resize" + image_name)
+            previewImage = Image(Point(400,200),image_name)
             previewImage.draw(startwin)
 
         if(inRectangle(button2, selectPuzzle)):
@@ -217,8 +217,8 @@ while (not isinstance(NUM_COLS,int) or not isinstance(NUM_ROWS,int) or not isins
                 wpercent = (basewidth / float(img.size[0]))
                 hsize = int((float(img.size[1]) * float(wpercent)))
                 img = img.resize((basewidth, hsize), Img.ANTIALIAS)
-                img.save("umn.gif")
-            previewImage = Image(Point(400,200),"umn.gif")
+                img.save("resize" + image_name)
+            previewImage = Image(Point(400,200),image_name)
             previewImage.draw(startwin)
 
         if(inRectangle(button3, selectPuzzle)):
@@ -232,8 +232,8 @@ while (not isinstance(NUM_COLS,int) or not isinstance(NUM_ROWS,int) or not isins
                 wpercent = (basewidth / float(img.size[0]))
                 hsize = int((float(img.size[1]) * float(wpercent)))
                 img = img.resize((basewidth, hsize), Img.ANTIALIAS)
-                img.save("grasshopper.gif")
-            previewImage = Image(Point(400,200),"grasshopper.gif")
+                img.save("resize" + image_name)
+            previewImage = Image(Point(400,200),image_name)
             previewImage.draw(startwin)
 
         if(inRectangle(button4, selectPuzzle)):
@@ -260,6 +260,18 @@ while (not isinstance(NUM_COLS,int) or not isinstance(NUM_ROWS,int) or not isins
                     image_name = 12345
                 customwin.close()
 
+                cover = Rectangle(Point(250, 68), Point(550, 335))
+                cover.setFill("white")
+                cover.draw(startwin)
+                if Img.open(image_name).size[0] > 225:
+                    basewidth = 225
+                    img = Img.open(image_name)
+                    wpercent = (basewidth / float(img.size[0]))
+                    hsize = int((float(img.size[1]) * float(wpercent)))
+                    img = img.resize((basewidth, hsize), Img.ANTIALIAS)
+                    img.save("resize" + image_name)
+                previewImage = Image(Point(400, 200), image_name)
+                previewImage.draw(startwin)
 
 
     #prompt.draw(startwin)
