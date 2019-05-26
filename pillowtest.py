@@ -53,6 +53,21 @@ for i in range(0, len(Imglist)):
     piece_list[i] = Image(pt, "crop"+str(Imglist[i])+".gif")
     piece_list[i].draw(win)
 
+def listInOrder(list):
+    i = 0
+    while i < len(list) - 1:
+        if list[i] > list [i+1]:
+            return False
+        i = i+1
+    return True
+
+def puzzleDone():
+    done_message = Text(Point(SIZE_X/2, SIZE_Y/4), "Puzzle Complete!")
+    done_message.setSize(20)
+    done_message.setTextColor("white")
+    done_message.draw(win)
+
+
 while (1):
     coords1 = win.getMouse()
     for piece1 in piece_list:
@@ -68,5 +83,14 @@ while (1):
                     piece2y = topleft2.getY()
                     piece1.move(piece2x - piece1x, piece2y - piece1y)
                     piece2.move(piece1x - piece2x, piece1y - piece2y)
+                    index1 = piece_list.index(piece1)
+                    index2 = piece_list.index(piece2)
+                    piece_list[index1] = piece2
+                    piece_list[index2] = piece1
+                    temp = Imglist[index1]
+                    Imglist[index1] = Imglist[index2]
+                    Imglist[index2] = temp
                     break
             break
+    if listInOrder(Imglist):
+        puzzleDone()
