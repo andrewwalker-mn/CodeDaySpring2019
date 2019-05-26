@@ -18,6 +18,11 @@ def inPiece(piece, coords):
     bry = botright.getY()
     return (x > tlx and x < brx and y > tly and y < bry)
 
+def moveAnimation(piece, dx, dy, repetitions, delay):
+    for i in range(repetitions):
+        piece.move(dx, dy)
+        time.sleep(delay)
+
 while True:
     image_name = input("What is the name of the image you want to puzzle-ify? ")
     try:
