@@ -1,11 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="15352ac2-7c66-4de0-8464-e2dec3bf55ec" name="Default Changelist" comment="clean up">
+    <list default="true" id="05b85f24-e4ad-407f-9f66-3cad1d652bde" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/pillowtest.py" beforeDir="false" afterPath="$PROJECT_DIR$/pillowtest.py" afterDir="false" />
     </list>
-    <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
-    <option name="TRACKING_ENABLED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -13,50 +12,47 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="pillowtest.py" pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/pillowtest.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="352">
-              <caret line="178" column="47" selection-start-line="178" selection-start-column="47" selection-end-line="178" selection-end-column="47" />
+            <state relative-caret-position="-63">
+              <caret line="230" column="40" lean-forward="true" selection-start-line="230" selection-start-column="40" selection-end-line="230" selection-end-column="40" />
               <folding>
-                <element signature="e#0#28#0" expanded="true" />
+                <element signature="e#1293#1417#0" />
+                <element signature="e#1441#1683#0" />
+                <element signature="e#1722#2680#0" />
+                <element signature="e#2714#3139#0" />
+                <element signature="e#3176#3429#0" />
+                <element signature="e#3489#3570#0" />
+                <element signature="e#3592#3920#0" />
+                <element signature="e#3950#4092#0" />
+                <element signature="e#4125#4215#0" />
               </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$USER_HOME$/OneDrive/Documents/Python/clikdrag.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="-51">
+              <caret line="4" column="40" selection-start-line="4" selection-start-column="40" selection-end-line="4" selection-end-column="40" />
             </state>
           </provider>
         </entry>
       </file>
     </leaf>
   </component>
-  <component name="FileTemplateManagerImpl">
-    <option name="RECENT_TEMPLATES">
-      <list>
-        <option value="Python Script" />
-      </list>
-    </option>
-  </component>
-  <component name="FindInProjectRecents">
-    <findStrings>
-      <find>image_name</find>
-    </findStrings>
-  </component>
   <component name="Git.Settings">
     <option name="UPDATE_TYPE" value="MERGE" />
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
-    <option name="RESET_MODE" value="MIXED" />
   </component>
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/shuffler.py" />
-        <option value="$PROJECT_DIR$/graphicstest.py" />
         <option value="$PROJECT_DIR$/pillowtest.py" />
       </list>
     </option>
-  </component>
-  <component name="ProjectFrameBounds">
-    <option name="y" value="23" />
-    <option name="width" value="1280" />
-    <option name="height" value="709" />
   </component>
   <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="ProjectView">
@@ -64,6 +60,7 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
+      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -75,12 +72,10 @@
           <select />
         </subPane>
       </pane>
-      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
-    <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
-    <property name="settings.editor.selected.configurable" value="com.jetbrains.python.configuration.PyActiveSdkModuleConfigurable" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/pillowtest.py" />
   </component>
   <component name="RunDashboard">
     <option name="ruleStates">
@@ -94,9 +89,9 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="Python.pillowtest">
-    <configuration name="graphicstest" type="PythonConfigurationType" factoryName="Python" temporary="true">
-      <module name="untitled" />
+  <component name="RunManager">
+    <configuration name="pillowtest" type="PythonConfigurationType" factoryName="Python" nameIsGenerated="true">
+      <module name="CodeDaySpring2019" />
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
       <envs>
@@ -107,439 +102,60 @@
       <option name="IS_MODULE_SDK" value="false" />
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/graphicstest.py" />
-      <option name="PARAMETERS" value="" />
-      <option name="SHOW_COMMAND_LINE" value="false" />
-      <option name="EMULATE_TERMINAL" value="false" />
-      <option name="MODULE_MODE" value="false" />
-    </configuration>
-    <configuration name="pillowtest" type="PythonConfigurationType" factoryName="Python" temporary="true">
-      <module name="CodeDaySpring2019" />
-      <option name="INTERPRETER_OPTIONS" value="" />
-      <option name="PARENT_ENVS" value="true" />
-      <envs>
-        <env name="PYTHONUNBUFFERED" value="1" />
-      </envs>
-      <option name="SDK_HOME" value="/usr/local/bin/python3.6" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
-      <option name="IS_MODULE_SDK" value="false" />
-      <option name="ADD_CONTENT_ROOTS" value="true" />
-      <option name="ADD_SOURCE_ROOTS" value="true" />
       <option name="SCRIPT_NAME" value="$PROJECT_DIR$/pillowtest.py" />
       <option name="PARAMETERS" value="" />
       <option name="SHOW_COMMAND_LINE" value="false" />
       <option name="EMULATE_TERMINAL" value="false" />
       <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
     </configuration>
-    <list>
-      <item itemvalue="Python.graphicstest" />
-      <item itemvalue="Python.pillowtest" />
-    </list>
-    <recent_temporary>
-      <list>
-        <item itemvalue="Python.pillowtest" />
-        <item itemvalue="Python.graphicstest" />
-      </list>
-    </recent_temporary>
   </component>
   <component name="SvnConfiguration">
     <configuration />
   </component>
   <component name="TaskManager">
-    <task active="true" id="Default" summary="Default task">
-      <changelist id="15352ac2-7c66-4de0-8464-e2dec3bf55ec" name="Default Changelist" comment="" />
-      <created>1558809833935</created>
-      <option name="number" value="Default" />
-      <option name="presentableId" value="Default" />
-      <updated>1558809833935</updated>
-    </task>
-    <task id="LOCAL-00001" summary="merge">
-      <created>1558834176855</created>
-      <option name="number" value="00001" />
-      <option name="presentableId" value="LOCAL-00001" />
-      <option name="project" value="LOCAL" />
-      <updated>1558834176855</updated>
-    </task>
-    <task id="LOCAL-00002" summary="merge">
-      <created>1558834515911</created>
-      <option name="number" value="00002" />
-      <option name="presentableId" value="LOCAL-00002" />
-      <option name="project" value="LOCAL" />
-      <updated>1558834515911</updated>
-    </task>
-    <task id="LOCAL-00003" summary="cleanup">
-      <created>1558840962409</created>
-      <option name="number" value="00003" />
-      <option name="presentableId" value="LOCAL-00003" />
-      <option name="project" value="LOCAL" />
-      <updated>1558840962409</updated>
-    </task>
-    <task id="LOCAL-00004" summary="delet dis image">
-      <created>1558842026386</created>
-      <option name="number" value="00004" />
-      <option name="presentableId" value="LOCAL-00004" />
-      <option name="project" value="LOCAL" />
-      <updated>1558842026386</updated>
-    </task>
-    <task id="LOCAL-00005" summary="count swap">
-      <created>1558849002331</created>
-      <option name="number" value="00005" />
-      <option name="presentableId" value="LOCAL-00005" />
-      <option name="project" value="LOCAL" />
-      <updated>1558849002331</updated>
-    </task>
-    <task id="LOCAL-00006" summary="minor fix">
-      <created>1558849156981</created>
-      <option name="number" value="00006" />
-      <option name="presentableId" value="LOCAL-00006" />
-      <option name="project" value="LOCAL" />
-      <updated>1558849156981</updated>
-    </task>
-    <task id="LOCAL-00007" summary="minor fix 2">
-      <created>1558849234501</created>
-      <option name="number" value="00007" />
-      <option name="presentableId" value="LOCAL-00007" />
-      <option name="project" value="LOCAL" />
-      <updated>1558849234501</updated>
-    </task>
-    <task id="LOCAL-00008" summary="minor fix 3">
-      <created>1558850397129</created>
-      <option name="number" value="00008" />
-      <option name="presentableId" value="LOCAL-00008" />
-      <option name="project" value="LOCAL" />
-      <updated>1558850397129</updated>
-    </task>
-    <task id="LOCAL-00009" summary="minor fix 4">
-      <created>1558850713051</created>
-      <option name="number" value="00009" />
-      <option name="presentableId" value="LOCAL-00009" />
-      <option name="project" value="LOCAL" />
-      <updated>1558850713051</updated>
-    </task>
-    <task id="LOCAL-00010" summary="minor fix 6">
-      <created>1558851665805</created>
-      <option name="number" value="00010" />
-      <option name="presentableId" value="LOCAL-00010" />
-      <option name="project" value="LOCAL" />
-      <updated>1558851665805</updated>
-    </task>
-    <task id="LOCAL-00011" summary="Default Changelist">
-      <created>1558858022602</created>
-      <option name="number" value="00011" />
-      <option name="presentableId" value="LOCAL-00011" />
-      <option name="project" value="LOCAL" />
-      <updated>1558858022603</updated>
-    </task>
-    <task id="LOCAL-00012" summary="commit 2">
-      <created>1558858218813</created>
-      <option name="number" value="00012" />
-      <option name="presentableId" value="LOCAL-00012" />
-      <option name="project" value="LOCAL" />
-      <updated>1558858218813</updated>
-    </task>
-    <task id="LOCAL-00013" summary="commit 3">
-      <created>1558858289668</created>
-      <option name="number" value="00013" />
-      <option name="presentableId" value="LOCAL-00013" />
-      <option name="project" value="LOCAL" />
-      <updated>1558858289668</updated>
-    </task>
-    <task id="LOCAL-00014" summary="commit 4">
-      <created>1558858352688</created>
-      <option name="number" value="00014" />
-      <option name="presentableId" value="LOCAL-00014" />
-      <option name="project" value="LOCAL" />
-      <updated>1558858352688</updated>
-    </task>
-    <task id="LOCAL-00015" summary="small changes">
-      <created>1558858625869</created>
-      <option name="number" value="00015" />
-      <option name="presentableId" value="LOCAL-00015" />
-      <option name="project" value="LOCAL" />
-      <updated>1558858625869</updated>
-    </task>
-    <task id="LOCAL-00016" summary="clean up">
-      <created>1558858854974</created>
-      <option name="number" value="00016" />
-      <option name="presentableId" value="LOCAL-00016" />
-      <option name="project" value="LOCAL" />
-      <updated>1558858854974</updated>
-    </task>
-    <option name="localTasksCounter" value="17" />
     <servers />
   </component>
-  <component name="TodoView">
-    <todo-panel id="selected-file">
-      <is-autoscroll-to-source value="true" />
-    </todo-panel>
-    <todo-panel id="all">
-      <are-packages-shown value="true" />
-      <is-autoscroll-to-source value="true" />
-    </todo-panel>
-  </component>
   <component name="ToolWindowManager">
-    <frame x="0" y="23" width="1280" height="709" extended-state="0" />
+    <frame x="-8" y="-8" width="1382" height="744" extended-state="6" />
     <editor active="true" />
     <layout>
-      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.2234375" />
-      <window_info anchor="bottom" id="TODO" order="6" weight="0.3289689" />
-      <window_info anchor="bottom" id="Event Log" order="10" sideWeight="0.50078124" side_tool="true" weight="0.32755905" />
-      <window_info active="true" anchor="bottom" id="Version Control" order="7" sideWeight="0.49921876" visible="true" weight="0.32440946" />
-      <window_info anchor="bottom" id="Python Console" order="11" weight="0.32972974" />
-      <window_info anchor="bottom" id="Run" order="2" weight="0.296063" />
+      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.22395833" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
-      <window_info anchor="bottom" id="Terminal" order="9" />
       <window_info id="Favorites" order="2" side_tool="true" />
+      <window_info anchor="bottom" id="Message" order="0" />
+      <window_info anchor="bottom" id="Find" order="1" />
+      <window_info active="true" anchor="bottom" id="Run" order="2" visible="true" weight="0.29623568" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
-      <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
+      <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
+      <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
+      <window_info anchor="bottom" id="TODO" order="6" weight="0.3289689" />
+      <window_info anchor="bottom" id="Version Control" order="7" sideWeight="0.49921876" weight="0.32405892" />
+      <window_info anchor="bottom" id="Messages" order="8" />
+      <window_info anchor="bottom" id="Terminal" order="9" />
+      <window_info anchor="bottom" id="Event Log" order="10" sideWeight="0.50078124" side_tool="true" weight="0.32755905" />
+      <window_info anchor="bottom" id="Python Console" order="11" weight="0.32972974" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
-      <window_info anchor="bottom" id="Messages" order="8" />
-      <window_info anchor="bottom" id="Message" order="0" />
-      <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
-      <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
-      <window_info anchor="bottom" id="Find" order="1" />
+      <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
     </layout>
   </component>
   <component name="Vcs.Log.Tabs.Properties">
-    <option name="TAB_STATES">
+    <option name="RECENT_FILTERS">
       <map>
-        <entry key="MAIN">
+        <entry key="Branch">
           <value>
-            <State>
-              <option name="RECENTLY_FILTERED_USER_GROUPS">
-                <collection />
-              </option>
-              <option name="RECENTLY_FILTERED_BRANCH_GROUPS">
-                <collection />
-              </option>
-              <option name="COLUMN_ORDER">
-                <list>
-                  <option value="0" />
-                  <option value="1" />
-                  <option value="2" />
-                  <option value="3" />
-                </list>
-              </option>
-            </State>
+            <list />
+          </value>
+        </entry>
+        <entry key="User">
+          <value>
+            <list />
           </value>
         </entry>
       </map>
     </option>
-  </component>
-  <component name="VcsContentAnnotationSettings">
-    <option name="myLimit" value="2678400000" />
-  </component>
-  <component name="VcsManagerConfiguration">
-    <MESSAGE value="merge" />
-    <MESSAGE value="cleanup" />
-    <MESSAGE value="delet dis image" />
-    <MESSAGE value="count swap" />
-    <MESSAGE value="minor fix" />
-    <MESSAGE value="minor fix 2" />
-    <MESSAGE value="minor fix 3" />
-    <MESSAGE value="minor fix 4" />
-    <MESSAGE value="minor fix 5" />
-    <MESSAGE value="minor fix 6" />
-    <MESSAGE value="Default Changelist" />
-    <MESSAGE value="commit 2" />
-    <MESSAGE value="commit 3" />
-    <MESSAGE value="commit 4" />
-    <MESSAGE value="small changes" />
-    <MESSAGE value="clean up" />
-    <option name="LAST_COMMIT_MESSAGE" value="clean up" />
-  </component>
-  <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/crop1.gif" />
-    <entry file="file://$PROJECT_DIR$/pillowtest.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="228">
-          <caret line="69" column="30" selection-start-line="69" selection-start-column="30" selection-end-line="69" selection-end-column="30" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/shuffler.py" />
-    <entry file="file://$PROJECT_DIR$/graphicstest.py" />
-    <entry file="file://$PROJECT_DIR$/crop1.gif" />
-    <entry file="file://$PROJECT_DIR$/pillowtest.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="584">
-          <caret line="101" column="16" selection-start-line="101" selection-start-column="16" selection-end-line="101" selection-end-column="16" />
-          <folding>
-            <element signature="e#0#28#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/shuffler.py" />
-    <entry file="file://$PROJECT_DIR$/graphicstest.py" />
-    <entry file="file://$PROJECT_DIR$/crop1.gif" />
-    <entry file="file://$PROJECT_DIR$/pillowtest.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="152">
-          <caret line="69" column="25" lean-forward="true" selection-start-line="69" selection-start-column="25" selection-end-line="69" selection-end-column="25" />
-          <folding>
-            <element signature="e#0#28#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/shuffler.py" />
-    <entry file="file://$PROJECT_DIR$/graphicstest.py" />
-    <entry file="file://$PROJECT_DIR$/crop1.gif" />
-    <entry file="file://$PROJECT_DIR$/pillowtest.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="204">
-          <caret line="26" column="49" lean-forward="true" selection-start-line="26" selection-start-column="49" selection-end-line="26" selection-end-column="49" />
-          <folding>
-            <element signature="e#0#28#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/pillowtest.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="90">
-          <caret line="8" column="24" selection-start-line="8" selection-start-column="24" selection-end-line="8" selection-end-column="24" />
-          <folding>
-            <element signature="e#0#28#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/pillowtest.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="255">
-          <caret line="19" selection-start-line="19" selection-end-line="19" />
-          <folding>
-            <element signature="e#0#28#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/pillowtest.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="30">
-          <caret line="2" column="22" lean-forward="true" selection-start-line="2" selection-start-column="22" selection-end-line="2" selection-end-column="22" />
-          <folding>
-            <element signature="e#0#28#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/pillowtest.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="300">
-          <caret line="22" column="13" selection-start-line="22" selection-start-column="13" selection-end-line="22" selection-end-column="13" />
-          <folding>
-            <element signature="e#0#28#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/shuffler.py" />
-    <entry file="file://$PROJECT_DIR$/graphicstest.py" />
-    <entry file="file://$PROJECT_DIR$/crop1.gif" />
-    <entry file="file://$PROJECT_DIR$/pillowtest.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="300">
-          <caret line="20" column="6" lean-forward="true" selection-start-line="20" selection-start-column="6" selection-end-line="20" selection-end-column="6" />
-          <folding>
-            <element signature="e#0#28#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/shuffler.py" />
-    <entry file="file://$PROJECT_DIR$/graphicstest.py" />
-    <entry file="file://$PROJECT_DIR$/crop1.gif" />
-    <entry file="file://$PROJECT_DIR$/pillowtest.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="300">
-          <caret line="20" column="6" selection-start-line="20" selection-start-column="6" selection-end-line="20" selection-end-column="6" />
-          <folding>
-            <element signature="e#0#28#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/shuffler.py" />
-    <entry file="file://$PROJECT_DIR$/graphicstest.py" />
-    <entry file="file://$PROJECT_DIR$/crop1.gif" />
-    <entry file="file://$PROJECT_DIR$/pillowtest.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="91">
-          <caret line="58" column="36" lean-forward="true" selection-start-line="58" selection-start-column="36" selection-end-line="58" selection-end-column="36" />
-          <folding>
-            <element signature="e#0#28#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/shuffler.py" />
-    <entry file="file://$PROJECT_DIR$/graphicstest.py" />
-    <entry file="file://$PROJECT_DIR$/crop1.gif" />
-    <entry file="file://$PROJECT_DIR$/pillowtest.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="161">
-          <caret line="66" column="38" lean-forward="true" selection-start-line="66" selection-start-column="38" selection-end-line="66" selection-end-column="38" />
-          <folding>
-            <element signature="e#0#28#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/shuffler.py" />
-    <entry file="file://$PROJECT_DIR$/graphicstest.py" />
-    <entry file="file://$PROJECT_DIR$/crop1.gif" />
-    <entry file="file://$PROJECT_DIR$/pillowtest.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="228">
-          <caret line="69" column="30" selection-start-line="69" selection-start-column="30" selection-end-line="69" selection-end-column="30" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/shuffler.py" />
-    <entry file="file://$PROJECT_DIR$/graphicstest.py" />
-    <entry file="file://$PROJECT_DIR$/crop1.gif" />
-    <entry file="file://$PROJECT_DIR$/pillowtest.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="584">
-          <caret line="101" column="16" selection-start-line="101" selection-start-column="16" selection-end-line="101" selection-end-column="16" />
-          <folding>
-            <element signature="e#0#28#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/shuffler.py" />
-    <entry file="file://$PROJECT_DIR$/graphicstest.py" />
-    <entry file="file://$PROJECT_DIR$/crop1.gif" />
-    <entry file="file://$PROJECT_DIR$/pillowtest.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="286">
-          <caret line="173" column="24" lean-forward="true" selection-start-line="173" selection-start-column="24" selection-end-line="173" selection-end-column="24" />
-          <folding>
-            <element signature="e#0#28#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/shuffler.py" />
-    <entry file="file://$PROJECT_DIR$/graphicstest.py" />
-    <entry file="file://$PROJECT_DIR$/crop1.gif" />
-    <entry file="file://$PROJECT_DIR$/grasshopper.gif.jpg">
-      <provider selected="true" editor-type-id="images" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/pillowtest.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="352">
-          <caret line="178" column="47" selection-start-line="178" selection-start-column="47" selection-end-line="178" selection-end-column="47" />
-          <folding>
-            <element signature="e#0#28#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
   </component>
 </project>
