@@ -134,6 +134,7 @@ image_name = 12345
 
 while (not isinstance(NUM_COLS,int) or not isinstance(NUM_ROWS,int) or not isinstance(image_name,str)):
     startwin = GraphWin("Startup screen", 800, 400)
+    startwin.setBackground("white")
     title = Text(Point(400, 45), "Jigsaw Generator")
     title.setSize(30)
     title.setFace("helvetica")
@@ -141,6 +142,8 @@ while (not isinstance(NUM_COLS,int) or not isinstance(NUM_ROWS,int) or not isins
     title.setTextColor("purple")
     title.draw(startwin)
 
+    cover = Rectangle(Point(250,68), Point(550,335))
+    cover.draw(startwin)
 
     button1 = Rectangle(Point(40, 140), Point(160, 160))
     button2 = Rectangle(Point(40, 190), Point(160, 210))
@@ -189,7 +192,9 @@ while (not isinstance(NUM_COLS,int) or not isinstance(NUM_ROWS,int) or not isins
     while True:
         selectPuzzle = startwin.getMouse()
         if(inRectangle(button1, selectPuzzle)):
-
+            cover = Rectangle(Point(250,68), Point(550,335))
+            cover.setFill("white")
+            cover.draw(startwin)
             image_name = "panda.gif"
             if Img.open(image_name).size[0] > 225:
                 basewidth = 225
@@ -202,6 +207,9 @@ while (not isinstance(NUM_COLS,int) or not isinstance(NUM_ROWS,int) or not isins
             previewImage.draw(startwin)
 
         if(inRectangle(button2, selectPuzzle)):
+            cover = Rectangle(Point(250,68), Point(550,335))
+            cover.setFill("white")
+            cover.draw(startwin)
             image_name = "umn.gif"
             if Img.open(image_name).size[0] > 225:
                 basewidth = 225
@@ -214,9 +222,9 @@ while (not isinstance(NUM_COLS,int) or not isinstance(NUM_ROWS,int) or not isins
             previewImage.draw(startwin)
 
         if(inRectangle(button3, selectPuzzle)):
-            if Img.open("grasshopper.gif").size[0] > 300:
-                basewidth = 300
-                img = Img.open("grasshopper.gif")
+            cover = Rectangle(Point(250,68), Point(550,335))
+            cover.setFill("white")
+            cover.draw(startwin)
             image_name = "grasshopper.gif"
             if Img.open(image_name).size[0] > 225:
                 basewidth = 225
