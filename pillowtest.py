@@ -17,6 +17,9 @@ def solvingStage(piece_list):
         coords1 = win.getMouse()
         if(inRectangle(solveButton, coords1)):
             autoSolve(Imglist)
+            if listInOrder(Imglist):
+                puzzleDone()
+            break
         for piece1 in piece_list:
             if inPiece(piece1, coords1):
                 coords2 = win.getMouse()
