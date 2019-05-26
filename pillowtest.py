@@ -135,8 +135,8 @@ image_name = 12345
 while (not isinstance(NUM_COLS,int) or not isinstance(NUM_ROWS,int) or not isinstance(image_name,str)):
     startwin = GraphWin("Startup screen", 800, 400)
     #prompt = Text(Point(startwin.getWidth()/2, 40), "What is the name of the image you want to puzzle-ify?")
-    rowsprompt = Text(Point(startwin.getWidth()/2-100, 100), "Rows:")
-    colsprompt = Text(Point(startwin.getWidth()/2+55, 100), "Cols:")
+    rowsprompt = Text(Point(startwin.getWidth()/2-100, 375), "Rows:")
+    colsprompt = Text(Point(startwin.getWidth()/2+55, 375), "Cols:")
     text1 = Text(Point(100, 150), "Panda")
     text2 = Text(Point(100, 200), "UMN")
     text3 = Text(Point(100, 250), "Grasshopper")
@@ -165,11 +165,20 @@ while (not isinstance(NUM_COLS,int) or not isinstance(NUM_ROWS,int) or not isins
     button4.draw(startwin)
     button5.draw(startwin)
 
+    rowsprompt.draw(startwin)
+    colsprompt.draw(startwin)
+
+    rowsbox = Entry(Point(startwin.getWidth()/2-45, 375), 5)
+    colsbox = Entry(Point(startwin.getWidth()/2+105, 375), 5)
+
+    rowsbox.draw(startwin)
+    colsbox.draw(startwin)
+
     while True:
         selectPuzzle = startwin.getMouse()
         if(inRectangle(button1, selectPuzzle)):
-            if Img.open("panda.gif").size[0] > 300:
-                basewidth = 300
+            if Img.open("panda.gif").size[0] > 225:
+                basewidth = 225
                 img = Img.open("panda.gif")
                 wpercent = (basewidth / float(img.size[0]))
                 hsize = int((float(img.size[1]) * float(wpercent)))
@@ -179,8 +188,8 @@ while (not isinstance(NUM_COLS,int) or not isinstance(NUM_ROWS,int) or not isins
             previewImage.draw(startwin)
 
         if(inRectangle(button2, selectPuzzle)):
-            if Img.open("umn.gif").size[0] > 300:
-                basewidth = 300
+            if Img.open("umn.gif").size[0] > 225:
+                basewidth = 225
                 img = Img.open("umn.gif")
                 wpercent = (basewidth / float(img.size[0]))
                 hsize = int((float(img.size[1]) * float(wpercent)))
@@ -190,8 +199,8 @@ while (not isinstance(NUM_COLS,int) or not isinstance(NUM_ROWS,int) or not isins
             previewImage.draw(startwin)
 
         if(inRectangle(button3, selectPuzzle)):
-            if Img.open("grasshopper.gif").size[0] > 300:
-                basewidth = 300
+            if Img.open("grasshopper.gif").size[0] > 225:
+                basewidth = 225
                 img = Img.open("grasshopper.gif")
                 wpercent = (basewidth / float(img.size[0]))
                 hsize = int((float(img.size[1]) * float(wpercent)))
@@ -204,16 +213,6 @@ while (not isinstance(NUM_COLS,int) or not isinstance(NUM_ROWS,int) or not isins
 
 
     #prompt.draw(startwin)
-    rowsprompt.draw(startwin)
-    colsprompt.draw(startwin)
-
-    promptbox = Entry(Point(startwin.getWidth()/2, 65), 10)
-    rowsbox = Entry(Point(startwin.getWidth()/2-45, 100), 5)
-    colsbox = Entry(Point(startwin.getWidth()/2+105, 100), 5)
-
-    promptbox.draw(startwin)
-    rowsbox.draw(startwin)
-    colsbox.draw(startwin)
 
     clickprompt = Text(Point(startwin.getWidth()/2, 220), "Click outside a box when done with input.")
     clickprompt.draw(startwin)
