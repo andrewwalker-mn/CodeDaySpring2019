@@ -3,6 +3,8 @@ from random import shuffle
 from graphics import *
 import os
 
+is_playing = True
+
 def crop(coords, start, finish):
     image = Img.open(start)
     cropped = image.crop(coords)
@@ -13,7 +15,7 @@ def solvingStage(piece_list):
     number_message = Text(Point(SIZE_X * 0.5, SIZE_Y * 1.05), "Number of Swaps: " + str(number_of_swaps))
     number_message.setTextColor("black")
     number_message.draw(win)
-    while True:
+    while is_playing:
         coords1 = win.getMouse()
         if(inRectangle(solveButton, coords1)):
             autoSolve(Imglist)
@@ -31,6 +33,7 @@ def solvingStage(piece_list):
         number_message.setTextColor("black")
         number_message.draw(win)
         if listInOrder(Imglist):
+            is_playing = False
             puzzleDone()
 
 def listInOrder(list):
@@ -110,6 +113,7 @@ def autoSolve(Imglist):
         indexCorrect = findPiece(Imglist, i)
         swap(piece_list[i], piece_list[indexCorrect])
         if listInOrder(Imglist):
+            is_playing = False
             puzzleDone()
 
 def findPiece(Imglist, i):
