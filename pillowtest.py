@@ -82,7 +82,7 @@ def cropPics():
 
 
 
-while True:
+"""while True:
     image_name = input("What is the name of the image you want to puzzle-ify? ")
     try:
         Img.open(image_name)
@@ -92,7 +92,41 @@ while True:
 NUM_COLS = int(input("How many columns do you want in your puzzle? "))
 NUM_ROWS = int(input("How many rows do you want in your puzzle? "))
 if input("You will have a " + str(NUM_COLS*NUM_ROWS) + " piece puzzle. Continue? (\"yes\") ") != "yes":
-    exit("by user")
+    exit("by user")"""
+
+
+NUM_COLS = "not an int"
+NUM_ROWS = "not an int"
+image_name = 12345
+
+while (not isinstance(NUM_COLS,int) or not isinstance(NUM_ROWS,int) or not isinstance(image_name,str)):
+    startwin = GraphWin("Startup for puzzle", 500, 300)
+    prompt = Text(Point(startwin.getWidth()/2, 40), "What is the name of the image you want to puzzle-ify?")
+    rowsprompt = Text(Point(startwin.getWidth()/2, 100), "How many rows do you want in the puzzle?")
+    colsprompt = Text(Point(startwin.getWidth()/2, 160), "How many columns do you want in the puzzle?")
+    prompt.draw(startwin)
+    rowsprompt.draw(startwin)
+    colsprompt.draw(startwin)
+    promptbox = Entry(Point(startwin.getWidth()/2, 65), 10)
+    rowsbox = Entry(Point(startwin.getWidth()/2, 125), 10)
+    colsbox = Entry(Point(startwin.getWidth()/2, 185), 10)
+    promptbox.draw(startwin)
+    rowsbox.draw(startwin)
+    colsbox.draw(startwin)
+    clickprompt = Text(Point(startwin.getWidth()/2, 220), "Click outside a box when done with input.")
+    clickprompt.draw(startwin)
+
+    startwin.getMouse()
+    image_name = promptbox.getText()
+    try:
+        NUM_COLS = int(colsbox.getText())
+    except:
+        NUM_COLS = NUM_COLS
+    try:
+        NUM_ROWS = int(rowsbox.getText())
+    except:
+        NUM_ROWS = NUM_ROWS
+    startwin.close()
 SIZE_X = Img.open(image_name).size[0]-Img.open(image_name).size[0]%NUM_COLS
 SIZE_Y = Img.open(image_name).size[1]-Img.open(image_name).size[1]%NUM_ROWS
 size_x = SIZE_X/NUM_COLS
