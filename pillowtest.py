@@ -248,40 +248,38 @@ while (not isinstance(NUM_COLS,int) or not isinstance(NUM_ROWS,int) or not isins
             previewImage.draw(startwin)
 
         if(inRectangle(button4, selectPuzzle)):
-            image_name = 12345
-            while not isinstance(image_name, str):
-                customwin = GraphWin("Input image name", 250, 100)
-                prompt = Text(Point(customwin.getWidth()/2, 20), "What is the name of the image\nyou want to puzzle-ify?")
-                prompt.draw(customwin)
-                promptbox = Entry(Point(90,60),18)
-                promptbox.draw(customwin)
-                OKtext = Text(Point(210, 60), "OK")
-                OKtext.setSize(15)
-                OKtext.draw(customwin)
-                OKbox = Rectangle(Point(190, 45), Point(230, 75))
-                OKbox.draw(customwin)
-                while True:
-                    if inRectangle(OKbox, customwin.getMouse()):
-                        image_name = promptbox.getText()
-                        break
-                try:
-                    Img.open(image_name)
-                except:
-                    image_name = "resizelogo.gif"
-                customwin.close()
+            customwin = GraphWin("Input image name", 250, 100)
+            prompt = Text(Point(customwin.getWidth()/2, 20), "What is the name of the image\nyou want to puzzle-ify?")
+            prompt.draw(customwin)
+            promptbox = Entry(Point(90,60),18)
+            promptbox.draw(customwin)
+            OKtext = Text(Point(210, 60), "OK")
+            OKtext.setSize(15)
+            OKtext.draw(customwin)
+            OKbox = Rectangle(Point(190, 45), Point(230, 75))
+            OKbox.draw(customwin)
+            while True:
+                if inRectangle(OKbox, customwin.getMouse()):
+                    image_name = promptbox.getText()
+                    break
+            try:
+                Img.open(image_name)
+            except:
+                image_name = "resizelogo.gif"
+            customwin.close()
 
-                cover = Rectangle(Point(250, 68), Point(550, 335))
-                cover.setFill("white")
-                cover.draw(startwin)
-                if Img.open(image_name).size[0] > 225:
-                    basewidth = 225
-                    img = Img.open(image_name)
-                    wpercent = (basewidth / float(img.size[0]))
-                    hsize = int((float(img.size[1]) * float(wpercent)))
-                    img = img.resize((basewidth, hsize), Img.ANTIALIAS)
-                    img.save("resize" + image_name)
-                previewImage = Image(Point(400, 200), image_name)
-                previewImage.draw(startwin)
+            cover = Rectangle(Point(250, 68), Point(550, 335))
+            cover.setFill("white")
+            cover.draw(startwin)
+            if Img.open(image_name).size[0] > 225:
+                basewidth = 225
+                img = Img.open(image_name)
+                wpercent = (basewidth / float(img.size[0]))
+                hsize = int((float(img.size[1]) * float(wpercent)))
+                img = img.resize((basewidth, hsize), Img.ANTIALIAS)
+                img.save("resize" + image_name)
+            previewImage = Image(Point(400, 200), image_name)
+            previewImage.draw(startwin)
 
 
     #prompt.draw(startwin)
