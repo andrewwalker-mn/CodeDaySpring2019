@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="5a5361bb-7c0f-423a-90f7-097aef883e32" name="Default Changelist" comment="bug fix 2">
+    <list default="true" id="5a5361bb-7c0f-423a-90f7-097aef883e32" name="Default Changelist" comment="start">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/pillowtest.py" beforeDir="false" afterPath="$PROJECT_DIR$/pillowtest.py" afterDir="false" />
     </list>
@@ -16,8 +16,8 @@
       <file leaf-file-name="pillowtest.py" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/pillowtest.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="254">
-              <caret line="151" column="31" selection-start-line="151" selection-start-column="31" selection-end-line="151" selection-end-column="31" />
+            <state relative-caret-position="324">
+              <caret line="296" column="67" lean-forward="true" selection-start-line="296" selection-start-column="67" selection-end-line="296" selection-end-column="67" />
               <folding>
                 <element signature="e#0#28#0" expanded="true" />
                 <element signature="e#239#320#0" />
@@ -234,7 +234,14 @@
       <option name="project" value="LOCAL" />
       <updated>1558862546132</updated>
     </task>
-    <option name="localTasksCounter" value="3" />
+    <task id="LOCAL-00003" summary="start">
+      <created>1558863107904</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1558863107904</updated>
+    </task>
+    <option name="localTasksCounter" value="4" />
     <servers />
   </component>
   <component name="ToolWindowManager">
@@ -293,7 +300,8 @@
   <component name="VcsManagerConfiguration">
     <MESSAGE value="bug fix" />
     <MESSAGE value="bug fix 2" />
-    <option name="LAST_COMMIT_MESSAGE" value="bug fix 2" />
+    <MESSAGE value="start" />
+    <option name="LAST_COMMIT_MESSAGE" value="start" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -618,8 +626,8 @@
     <entry file="file://$PROJECT_DIR$/grasshopper.gif.jpg" />
     <entry file="file://$PROJECT_DIR$/pillowtest.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="254">
-          <caret line="151" column="31" selection-start-line="151" selection-start-column="31" selection-end-line="151" selection-end-column="31" />
+        <state relative-caret-position="324">
+          <caret line="296" column="67" lean-forward="true" selection-start-line="296" selection-start-column="67" selection-end-line="296" selection-end-column="67" />
           <folding>
             <element signature="e#0#28#0" expanded="true" />
             <element signature="e#239#320#0" />
